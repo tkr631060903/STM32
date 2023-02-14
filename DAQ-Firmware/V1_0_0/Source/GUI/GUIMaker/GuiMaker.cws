@@ -1,0 +1,450 @@
+[Workspace Header]
+Version = 1300
+Pathname = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/GUIMaker/GuiMaker.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 3
+Active Project = 1
+Project 0001 = "GuiMaker.prj"
+Project 0002 Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/Samples/"
+Project 0002 Line0002 = "QRCode.prj"
+Project 0003 Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/Software/PictureTool/Pi"
+Project 0003 Line0002 = "ctureTool.prj"
+Drag Bar Left = 160
+Window Top = 8
+Window Left = 2111
+Window Bottom = 510
+Window Right = 2901
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 1
+Window Confinement Region Enabled = True
+MainColumnWidth = 143
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1300
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[Project Header 0002]
+Version = 1300
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[Project Header 0003]
+Version = 1300
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/GUIMaker/GuiMaker.uir"
+File Type = "User Interface Resource"
+Disk Date = 3550301834
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Window Height = 427
+Window Width = 686
+Window Z-Order = 1
+
+[File 0002]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/Software/PictureTool/Pi"
+Path Line0002 = "ctureTool.uir"
+File Type = "User Interface Resource"
+Disk Date = 3544175145
+In Projects = "3,"
+Window Top = 152
+Window Left = 74
+Window Height = 427
+Window Width = 686
+
+[File 0003]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/Software/PictureTool/Pi"
+Path Line0002 = "ctureTool.c"
+File Type = "CSource"
+Disk Date = 3544178558
+In Projects = "3,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,224,224,224,12,26,12,0,0,80,0,0,0,0,0,25,42,0,51,17,427,686,1,0,"
+
+[File 0004]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/Samples/"
+Path Line0002 = "PrtQR.c"
+File Type = "CSource"
+Disk Date = 3527996144
+In Projects = "2,"
+Window Top = 272
+Window Left = 138
+Source Window State = "1,19,19,19,41,61,61,0,0,135,0,0,0,0,0,53,9,0,12,126,427,694,1,0,"
+
+[File 0005]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/qrencode"
+Path Line0002 = ".c"
+File Type = "CSource"
+Disk Date = 3542362616
+In Projects = "2,"
+Window Top = 242
+Window Left = 122
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,25,489,0,546,0,427,686,1,0,"
+
+[File 0006]
+Path = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/GUIMaker/GuiMaker.h"
+File Type = "Include"
+Disk Date = 3550301834
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,686,1,0,"
+
+[File 0007]
+Path = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/GUIMaker/GuiMaker.c"
+File Type = "CSource"
+Disk Date = 3529759628
+In Projects = "1,"
+Window Top = 212
+Window Left = 106
+Source Window State = "1,0,14,14,0,54,54,0,0,0,0,0,0,0,0,0,0,0,15,24,427,686,1,0,"
+
+[File 0008]
+Path = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/frame.c"
+File Type = "CSource"
+Disk Date = 3524971760
+In Projects = "2,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0009]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/Samples/"
+Path Line0002 = "PrtQR.h"
+File Type = "Include"
+Disk Date = 3524922921
+In Projects = "2,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0010]
+Path = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/qrbits.h"
+File Type = "Include"
+Disk Date = 3524972685
+In Projects = "2,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0011]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/qrencode"
+Path Line0002 = ".h"
+File Type = "Include"
+Disk Date = 3542366347
+In Projects = "2,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0012]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/Application/QRCode/Samples/"
+Path Line0002 = "PrtQR.uir"
+File Type = "User Interface Resource"
+Disk Date = 3524922920
+In Projects = "2,"
+
+[File 0013]
+Path Line0001 = "/c/Users/lwh/Desktop/Health/03.HealthScale1.0/Source/GUI/Software/PictureTool/Pi"
+Path Line0002 = "ctureTool.h"
+File Type = "Include"
+Disk Date = 3544173949
+In Projects = "3,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,686,1,0,"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Default Build Config 0002 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0002]
+Number of Dependencies = 0
+
+[Build Options 0002]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0002]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0002]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0002]
+External Process Path = ""
+
+[Command Line Args 0002]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Default Build Config 0003 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0003]
+Number of Dependencies = 0
+
+[Build Options 0003]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0003]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0003]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0003]
+External Process Path = ""
+
+[Command Line Args 0003]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

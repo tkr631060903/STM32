@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "stm32f10x.h": "c",
+        "bsp_led.h": "c",
+        "bsp_key.h": "c",
+        "bsp_exti.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "bsp_systick.h": "c",
+        "core_cm3.h": "c",
+        "stm32f10x_usart.h": "c",
+        "bsp_usart.h": "c",
+        "stm32f10x_dma.h": "c",
+        "bsp_dma_mtom.h": "c",
+        "bsp_dma_mtop.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.dimInactiveRegions": false
+}

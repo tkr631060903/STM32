@@ -1,0 +1,1548 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.1.53127/W32 for ARM              20/Aug/2020  14:58:42 #
+# Copyright 2007-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Exe\TFC-DAQ.out                             #
+#    Map file     =  D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\List\TFC-DAQ.map                            #
+#    Command line =  D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\Beep.o D:\hardware\P\TFC\03.SCH\DAQ-Fir #
+#                    mware\V1_0_0\Project\Stm32f105\Debug\Obj\CAN.o           #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\FsMode.o D:\hardware\P\TFC\03.SCH\DAQ-F #
+#                    irmware\V1_0_0\Project\Stm32f105\Debug\Obj\GPIO.o        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\HostComm.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\InternalFlash.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\LedDriver.o                             #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\MainPanel.o                             #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\OnChipADC.o                             #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\QuadDAC.o D:\hardware\P\TFC\03.SCH\DAQ- #
+#                    Firmware\V1_0_0\Project\Stm32f105\Debug\Obj\SPIFlash.o   #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\TFCError.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\TFCEvent.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\TFCThumb.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\Timer1.o D:\hardware\P\TFC\03.SCH\DAQ-F #
+#                    irmware\V1_0_0\Project\Stm32f105\Debug\Obj\Timer4.o      #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\TypeC.o D:\hardware\P\TFC\03.SCH\DAQ-Fi #
+#                    rmware\V1_0_0\Project\Stm32f105\Debug\Obj\UartSwitch.o   #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\UserTask.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\WinTimer.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\cJSON.o D:\hardware\P\TFC\03.SCH\DAQ-Fi #
+#                    rmware\V1_0_0\Project\Stm32f105\Debug\Obj\core_cm3.o     #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\debug_stm32.o                           #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\hw_config.o                             #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\main.o D:\hardware\P\TFC\03.SCH\DAQ-Fir #
+#                    mware\V1_0_0\Project\Stm32f105\Debug\Obj\misc.o          #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\startup_stm32f10x_cl.o                  #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_adc.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_bkp.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_can.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_crc.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_dac.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_dbgmcu.o                      #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_dma.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_exti.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_flash.o                       #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_fsmc.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_gpio.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_i2c.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_it.o                          #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_iwdg.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_pwr.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_rcc.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_rtc.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_sdio.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_spi.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_tim.o                         #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_usart.o                       #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\stm32f10x_wwdg.o                        #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\system_stm32f10x.o                      #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_core.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_desc.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_endp.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_init.o                              #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_int.o D:\hardware\P\TFC\03.SCH\DAQ- #
+#                    Firmware\V1_0_0\Project\Stm32f105\Debug\Obj\usb_istr.o   #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_mem.o D:\hardware\P\TFC\03.SCH\DAQ- #
+#                    Firmware\V1_0_0\Project\Stm32f105\Debug\Obj\usb_prop.o   #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\Obj\usb_pwr.o D:\hardware\P\TFC\03.SCH\DAQ- #
+#                    Firmware\V1_0_0\Project\Stm32f105\Debug\Obj\usb_regs.o   #
+#                    --redirect _Printf=_PrintfFull --redirect                #
+#                    _Scanf=_ScanfFull -o D:\hardware\P\TFC\03.SCH\DAQ-Firmwa #
+#                    re\V1_0_0\Project\Stm32f105\Debug\Exe\TFC-DAQ.out --map  #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\Debug\List\TFC-DAQ.map --config                   #
+#                    D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm #
+#                    32f105\..\..\Linker\TFC-DAQ.icf --semihosting --entry    #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0001ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block CSTACK, block HEAP };
+
+  Section             Kind        Address     Size  Object
+  -------             ----        -------     ----  ------
+"A1":                                        0x150
+  .intvec             ro code  0x00000000    0x150  startup_stm32f10x_cl.o [1]
+                             - 0x00000150    0x150
+
+"P1":                                      0x109dc
+  .text               ro code  0x00000150   0x2f80  TFCThumb.o [1]
+  .text               ro code  0x000030d0    0x3c0  Beep.o [1]
+  .text               ro code  0x00003490   0x14f4  cJSON.o [1]
+  .text               ro code  0x00004984    0x178  WinTimer.o [1]
+  .text               ro code  0x00004afc     0x36  strlen.o [5]
+  .text               ro code  0x00004b32     0x22  zero_init3.o [5]
+  .text               ro code  0x00004b54     0x44  strcpy.o [5]
+  .text               ro code  0x00004b98    0x2cc  MainPanel.o [1]
+  .text               ro code  0x00004e64     0xd4  TFCError.o [1]
+  .text               ro code  0x00004f38    0xc70  LedDriver.o [1]
+  .text               ro code  0x00005ba8     0x34  sprintf.o [3]
+  .text               ro code  0x00005bdc     0x4e  FltToDbl.o [4]
+  .text               ro code  0x00005c2a     0x1e  strcat.o [3]
+  .text               ro code  0x00005c48    0x6cc  debug_stm32.o [1]
+  .text               ro code  0x00006314     0x30  I32ToDbl.o [4]
+  .text               ro code  0x00006344    0x6f4  UartSwitch.o [1]
+  .text               ro code  0x00006a38    0x1f2  TFCEvent.o [1]
+  .text               ro code  0x00006c2a      0xe  cJSON.o [1]
+  .text               ro code  0x00006c38    0x8c4  CAN.o [1]
+  .text               ro code  0x000074fc    0x26c  OnChipADC.o [1]
+  .text               ro code  0x00007768     0x32  I32ToFlt.o [4]
+  .text               ro code  0x0000779a     0x1e  xsscin.o [3]
+  .text               ro code  0x000077b8    0x246  DblDiv.o [4]
+  .text               ro code  0x000079fe      0xa  xsprout.o [3]
+  .text               ro code  0x00007a08    0x1a2  DblMul.o [4]
+  .text               ro code  0x00007bac     0x90  DblToFlt.o [4]
+  .text               ro code  0x00007c3c     0x44  FltToS32.o [4]
+  .text               ro code  0x00007c80     0xd8  FltMul.o [4]
+  .text               ro code  0x00007d58     0xfc  FltDiv.o [4]
+  .text               ro code  0x00007e54     0x24  FltCmpLe.o [4]
+  .text               ro code  0x00007e78     0x24  FltCmpGe.o [4]
+  .text               ro code  0x00007e9c    0x684  QuadDAC.o [1]
+  .text               ro code  0x00008520      0x6  ABImemclr4.o [5]
+  .text               ro code  0x00008528     0x42  strcmp.o [5]
+  .text               ro code  0x0000856c     0x76  ABImemcpy.o [5]
+  .text               ro code  0x000085e4    0x1e0  stm32f10x_gpio.o [1]
+  .text               ro code  0x000087c4    0x1ac  TypeC.o [1]
+  .text               ro code  0x00008970    0x104  Timer4.o [1]
+  .text               ro code  0x00008a74    0x4b4  GPIO.o [1]
+  .text               ro code  0x00008f28    0x490  SPIFlash.o [1]
+  .text               ro code  0x000093b8    0x290  FsMode.o [1]
+  .text               ro code  0x00009648    0x21c  stm32f10x_rcc.o [1]
+  .text               ro code  0x00009864    0x222  stm32f10x_tim.o [1]
+  .text               ro code  0x00009a88     0xc4  HostComm.o [1]
+  .text               ro code  0x00009b4c     0x14  tolower.o [3]
+  .text               ro code  0x00009b60     0x14  cJSON.o [1]
+  .text               ro code  0x00009b74      0x6  strtod.o [4]
+  .text               ro code  0x00009b7c     0x2e  DblCmpGe.o [4]
+  .text               ro code  0x00009bac     0x2e  DblCmpLe.o [4]
+  .text               ro code  0x00009bdc     0x58  DblToI32.o [4]
+  .text               ro code  0x00009c34    0x180  DblSub.o [4]
+  .text               ro code  0x00009db4     0x36  xdtest.o [4]
+  .text               ro code  0x00009dec     0x24  sscanf.o [3]
+  .text               ro code  0x00009e10     0x2a  strncmp.o [3]
+  .text               ro code  0x00009e3c     0x84  misc.o [1]
+  .text               ro code  0x00009ec0    0x2fe  UserTask.o [1]
+  .text               ro code  0x0000a1c0     0xb8  InternalFlash.o [1]
+  .text               ro code  0x0000a278     0xc8  stm32f10x_exti.o [1]
+  .text               ro code  0x0000a340     0xe8  DblAdd.o [4]
+  .text               ro code  0x0000a428   0x10aa  xprintffull.o [3]
+  .text               ro code  0x0000b4d4    0x1b0  stm32f10x_usart.o [1]
+  .text               ro code  0x0000b684     0x2c  vsprintf.o [3]
+  .text               ro code  0x0000b6b0    0x614  stm32f10x_can.o [1]
+  .text               ro code  0x0000bcc4    0x20e  stm32f10x_adc.o [1]
+  .text               ro code  0x0000bed4    0x19c  stm32f10x_i2c.o [1]
+  .text               ro code  0x0000c070     0x84  FltAdd.o [4]
+  .text               ro code  0x0000c0f4     0xe6  FltSub.o [4]
+  .text               ro code  0x0000c1dc     0x32  ABImemset48.o [5]
+  .text               ro code  0x0000c210     0x90  stm32f10x_spi.o [1]
+  .text               ro code  0x0000c2a0     0x24  setlocale.o [3]
+  .text               ro code  0x0000c2c4      0xc  xlocale_c.o [3]
+  .text               ro code  0x0000c2d0     0x66  ABImemset.o [5]
+  .text               ro code  0x0000c338    0x150  xstod.o [4]
+  .text               ro code  0x0000c488    0xbb8  xscanffull.o [3]
+  .text               ro code  0x0000d040    0x19c  stm32f10x_flash.o [1]
+  .text               ro code  0x0000d1dc     0x20  xmbtowc.o [3]
+  .text               ro code  0x0000d1fc     0x16  strchr.o [5]
+  .text               ro code  0x0000d214     0x58  memchr.o [5]
+  .text               ro code  0x0000d26c      0xa  xmbcurmax.o [3]
+  .text               ro code  0x0000d278     0xbc  xxmemxmalloc.o [3]
+  .text               ro code  0x0000d334     0x1a  xwctomb.o [3]
+  .text               ro code  0x0000d350     0x88  xxmemxfree.o [3]
+  .text               ro code  0x0000d3d8     0xee  I64DivMod.o [5]
+  .text               ro code  0x0000d4c6     0x44  xdnorm.o [4]
+  .text               ro code  0x0000d50c    0x11a  xdscale.o [4]
+  .text               ro code  0x0000d628     0x6c  localeconv.o [3]
+  .text               ro code  0x0000d694      0xe  div.o [3]
+  .text               ro code  0x0000d6a2      0x2  xtls.o [3]
+  .text               ro code  0x0000d6a4    0x134  xstopfx.o [3]
+  .text               ro code  0x0000d7d8    0x1c0  xstoflt.o [3]
+  .text               ro code  0x0000d998    0x1e0  xdtento.o [4]
+  .text               ro code  0x0000db78    0x214  xstoxflt.o [3]
+  .text               ro code  0x0000dd8c     0x3c  xwctob.o [3]
+  .text               ro code  0x0000ddc8     0x28  isxxx.o [3]
+  .text               ro code  0x0000ddf0     0xa2  xstoll.o [3]
+  .text               ro code  0x0000de94    0x1c8  xstoull.o [3]
+  .text               ro code  0x0000e05c    0x150  xstold.o [4]
+  .text               ro code  0x0000e1ac     0x5c  xencoding_sb.o [3]
+  .text               ro code  0x0000e208    0x114  xsyslock.o [3]
+  .text               ro code  0x0000e31c     0x28  xgetmemchunk.o [3]
+  .text               ro code  0x0000e344      0x2  I64DivZer.o [5]
+  .text               ro code  0x0000e348     0x20  DblCmpEq.o [4]
+  .text               ro code  0x0000e368      0xc  errno.o [3]
+  .text               ro code  0x0000e374     0x16  xlocale_c.o [3]
+  .text               ro code  0x0000e38a     0x14  xlocale_c.o [3]
+  .text               ro code  0x0000e39e      0x4  xmtx2.o [3]
+  .text               ro code  0x0000e3a2      0x8  xmtx.o [3]
+  .rodata             const    0x0000e3ac    0x32c  UserTask.o [1]
+  .text               ro code  0x0000e6d8    0x30c  main.o [1]
+  .text               ro code  0x0000e9e4    0x198  system_stm32f10x.o [1]
+  .text               ro code  0x0000eb7c    0x178  realloc.o [3]
+  .text               ro code  0x0000ecf4     0x78  ABImemmove.o [5]
+  .rodata             const    0x0000ed6c    0x120  GPIO.o [1]
+  .rodata             const    0x0000ee8c     0xbc  MainPanel.o [1]
+  .text               ro code  0x0000ef48     0xa0  packbits_init3.o [5]
+  .rodata             const    0x0000efe8     0x7c  Beep.o [1]
+  .rodata             const    0x0000f064     0x78  Beep.o [1]
+  .rodata             const    0x0000f0dc     0x70  TFCError.o [1]
+  .rodata             const    0x0000f14c     0x60  TFCEvent.o [1]
+  .rodata             const    0x0000f1ac     0x60  TFCEvent.o [1]
+  .rodata             const    0x0000f20c     0x60  TFCEvent.o [1]
+  .rodata             const    0x0000f26c     0x58  TFCEvent.o [1]
+  .rodata             const    0x0000f2c4     0x54  main.o [1]
+  .rodata             const    0x0000f318     0x50  Beep.o [1]
+  .rodata             const    0x0000f368     0x4c  MainPanel.o [1]
+  .rodata             const    0x0000f3b4     0x48  Beep.o [1]
+  .rodata             const    0x0000f3fc     0x40  TFCThumb.o [1]
+  .rodata             const    0x0000f43c     0x3c  TypeC.o [1]
+  .text               ro code  0x0000f478     0x38  stm32f10x_it.o [1]
+  .rodata             const    0x0000f4b0     0x34  CAN.o [1]
+  .rodata             const    0x0000f4e4     0x34  TFCThumb.o [1]
+  .rodata             const    0x0000f518     0x34  TFCThumb.o [1]
+  .rodata             const    0x0000f54c     0x34  TFCThumb.o [1]
+  .rodata             const    0x0000f580     0x30  TFCThumb.o [1]
+  .rodata             const    0x0000f5b0     0x30  TFCThumb.o [1]
+  .rodata             const    0x0000f5e0     0x30  TFCThumb.o [1]
+  .rodata             const    0x0000f610     0x30  TFCThumb.o [1]
+  .rodata             const    0x0000f640     0x30  TFCThumb.o [1]
+  .rodata             const    0x0000f670     0x30  TypeC.o [1]
+  .rodata             const    0x0000f6a0     0x30  main.o [1]
+  .rodata             const    0x0000f6d0     0x2c  MainPanel.o [1]
+  .rodata             const    0x0000f6fc     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f728     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f754     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f780     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f7ac     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f7d8     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f804     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f830     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f85c     0x2c  TFCThumb.o [1]
+  .rodata             const    0x0000f888     0x2c  main.o [1]
+  .rodata             const    0x0000f8b4     0x2c  main.o [1]
+  .text               ro code  0x0000f8e0     0x2c  data_init3.o [5]
+  .rodata             const    0x0000f90c     0x28  LedDriver.o [1]
+  .rodata             const    0x0000f934     0x28  LedDriver.o [1]
+  .rodata             const    0x0000f95c     0x28  LedDriver.o [1]
+  .rodata             const    0x0000f984     0x28  LedDriver.o [1]
+  .rodata             const    0x0000f9ac     0x28  LedDriver.o [1]
+  .rodata             const    0x0000f9d4     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000f9fc     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000fa24     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000fa4c     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000fa74     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000fa9c     0x28  TFCThumb.o [1]
+  .rodata             const    0x0000fac4     0x24  SPIFlash.o [1]
+  .rodata             const    0x0000fae8     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fb0c     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fb30     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fb54     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fb78     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fb9c     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fbc0     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fbe4     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fc08     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fc2c     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fc50     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fc74     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fc98     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fcbc     0x24  TFCThumb.o [1]
+  .rodata             const    0x0000fce0     0x24  main.o [1]
+  .rodata             const    0x0000fd04     0x24  main.o [1]
+  .rodata             const    0x0000fd28     0x24  main.o [1]
+  .rodata             const    0x0000fd4c     0x24  main.o [1]
+  .rodata             const    0x0000fd70     0x24  main.o [1]
+  .rodata             const    0x0000fd94     0x24  main.o [1]
+  .iar.init_table     const    0x0000fdb8     0x2c  - Linker created -
+  .rodata             const    0x0000fde4     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fe04     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fe24     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fe44     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fe64     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fe84     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fea4     0x20  TFCThumb.o [1]
+  .rodata             const    0x0000fec4     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000fee0     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000fefc     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ff18     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ff34     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ff50     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ff6c     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ff88     0x1c  TFCThumb.o [1]
+  .rodata             const    0x0000ffa4     0x1c  main.o [1]
+  .rodata             const    0x0000ffc0     0x1c  main.o [1]
+  .rodata             const    0x0000ffdc     0x18  TFCThumb.o [1]
+  .rodata             const    0x0000fff4     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001000c     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010024     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001003c     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010054     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001006c     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010084     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001009c     0x18  TFCThumb.o [1]
+  .rodata             const    0x000100b4     0x18  TFCThumb.o [1]
+  .rodata             const    0x000100cc     0x18  TFCThumb.o [1]
+  .rodata             const    0x000100e4     0x18  TFCThumb.o [1]
+  .rodata             const    0x000100fc     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010114     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001012c     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010144     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001015c     0x18  TFCThumb.o [1]
+  .rodata             const    0x00010174     0x18  TFCThumb.o [1]
+  .rodata             const    0x0001018c     0x18  TFCThumb.o [1]
+  .rodata             const    0x000101a4     0x18  TypeC.o [1]
+  .rodata             const    0x000101bc     0x18  main.o [1]
+  .rodata             const    0x000101d4     0x18  main.o [1]
+  .text               ro code  0x000101ec     0x16  cmain.o [5]
+  .text               ro code  0x00010202      0x4  low_level_init.o [3]
+  .text               ro code  0x00010206      0x4  exit.o [3]
+  .text               ro code  0x0001020c      0xe  cexit.o [5]
+  .text               ro code  0x0001021c     0x14  exit.o [6]
+  .rodata             const    0x00010230     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010244     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010258     0x14  TFCThumb.o [1]
+  .rodata             const    0x0001026c     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010280     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010294     0x14  TFCThumb.o [1]
+  .rodata             const    0x000102a8     0x14  TFCThumb.o [1]
+  .rodata             const    0x000102bc     0x14  TFCThumb.o [1]
+  .rodata             const    0x000102d0     0x14  TFCThumb.o [1]
+  .rodata             const    0x000102e4     0x14  TFCThumb.o [1]
+  .rodata             const    0x000102f8     0x14  TFCThumb.o [1]
+  .rodata             const    0x0001030c     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010320     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010334     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010348     0x14  TFCThumb.o [1]
+  .rodata             const    0x0001035c     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010370     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010384     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010398     0x14  TFCThumb.o [1]
+  .rodata             const    0x000103ac     0x14  TFCThumb.o [1]
+  .rodata             const    0x000103c0     0x14  TFCThumb.o [1]
+  .rodata             const    0x000103d4     0x14  TFCThumb.o [1]
+  .rodata             const    0x000103e8     0x14  TFCThumb.o [1]
+  .rodata             const    0x000103fc     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010410     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010424     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010438     0x14  TFCThumb.o [1]
+  .rodata             const    0x0001044c     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010460     0x14  TFCThumb.o [1]
+  .rodata             const    0x00010474     0x10  Beep.o [1]
+  .rodata             const    0x00010484     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010494     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104a4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104b4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104c4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104d4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104e4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000104f4     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010504     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010514     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010524     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010534     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010544     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010554     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010564     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010574     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010584     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010594     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105a4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105b4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105c4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105d4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105e4     0x10  TFCThumb.o [1]
+  .rodata             const    0x000105f4     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010604     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010614     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010624     0x10  TFCThumb.o [1]
+  .rodata             const    0x00010634     0x10  TypeC.o [1]
+  .rodata             const    0x00010644     0x10  UserTask.o [1]
+  .rodata             const    0x00010654      0xc  Beep.o [1]
+  .rodata             const    0x00010660      0xc  LedDriver.o [1]
+  .rodata             const    0x0001066c      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010678      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010684      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010690      0xc  TFCThumb.o [1]
+  .rodata             const    0x0001069c      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106a8      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106b4      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106c0      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106cc      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106d8      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106e4      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106f0      0xc  TFCThumb.o [1]
+  .rodata             const    0x000106fc      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010708      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010714      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010720      0xc  TFCThumb.o [1]
+  .rodata             const    0x0001072c      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010738      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010744      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010750      0xc  TFCThumb.o [1]
+  .rodata             const    0x0001075c      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010768      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010774      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010780      0xc  TFCThumb.o [1]
+  .rodata             const    0x0001078c      0xc  TFCThumb.o [1]
+  .rodata             const    0x00010798      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107a4      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107b0      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107bc      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107c8      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107d4      0xc  TFCThumb.o [1]
+  .rodata             const    0x000107e0      0xc  UserTask.o [1]
+  .text               ro code  0x000107ec      0xc  cstartup_M.o [5]
+  .rodata             const    0x000107f8      0x8  TFCEvent.o [1]
+  .rodata             const    0x00010800      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010808      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010810      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010818      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010820      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010828      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010830      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010838      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010840      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010848      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010850      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010858      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010860      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010868      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010870      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010878      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010880      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010888      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010890      0x8  TFCThumb.o [1]
+  .rodata             const    0x00010898      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108a0      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108a8      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108b0      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108b8      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108c0      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108c8      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108d0      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108d8      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108e0      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108e8      0x8  TFCThumb.o [1]
+  .rodata             const    0x000108f0      0x8  UserTask.o [1]
+  .rodata             const    0x000108f8      0x8  UserTask.o [1]
+  .rodata             const    0x00010900      0x8  cJSON.o [1]
+  .rodata             const    0x00010908      0x8  cJSON.o [1]
+  .rodata             const    0x00010910      0x8  cJSON.o [1]
+  .rodata             const    0x00010918      0x8  cJSON.o [1]
+  .rodata             const    0x00010920      0x8  cJSON.o [1]
+  .rodata             const    0x00010928      0x8  cJSON.o [1]
+  .rodata             const    0x00010930      0x8  main.o [1]
+  .rodata             const    0x00010938      0x4  LedDriver.o [1]
+  .rodata             const    0x0001093c      0x4  UserTask.o [1]
+  .rodata             const    0x00010940      0x4  cJSON.o [1]
+  .text               ro code  0x00010944      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010948      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001094c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010950      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010954      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010958      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001095c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010960      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010964      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010968      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001096c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010970      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010974      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010978      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001097c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010980      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010984      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010988      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001098c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010990      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010994      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010998      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x0001099c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109a0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109a4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109a8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109ac      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109b0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109b4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109b8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109bc      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109c0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109c4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109c8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109cc      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109d0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109d4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109d8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109dc      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109e0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109e4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109e8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109ec      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109f0      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109f4      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109f8      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x000109fc      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a00      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a04      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a08      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a0c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a10      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a14      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a18      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a1c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a20      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a24      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a28      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a2c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a30      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a34      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a38      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a3c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a40      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a44      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a48      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a4c      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a50      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a54      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a58      0x4  startup_stm32f10x_cl.o [1]
+  .text               ro code  0x00010a5c      0x0  cstart_clearlocks.o [5]
+  .rodata             const    0x00010a5c      0x0  bwt_init3c.o [5]
+  Initializer bytes   ro data  0x00010a5c     0xcd  <for P2 s0>
+                             - 0x00010b29  0x109d9
+
+"P2", part 1 of 3:                           0x1c8
+  P2 s0                        0x20000000    0x1c6  <Init block>
+    .data             inited   0x20000000     0x74  MainPanel.o [1]
+    .data             inited   0x20000074     0x68  MainPanel.o [1]
+    __DLIB_PERTHREAD  inited   0x200000dc     0x50  localeconv.o [3]
+    .data             inited   0x2000012c     0x10  stm32f10x_rcc.o [1]
+    .data             inited   0x2000013c      0xc  cJSON.o [1]
+    .data             inited   0x20000148      0x4  Beep.o [1]
+    .data             inited   0x2000014c      0x4  CAN.o [1]
+    .data             inited   0x20000150      0x4  CAN.o [1]
+    .data             inited   0x20000154      0x4  TFCError.o [1]
+    .data             inited   0x20000158      0x4  TFCEvent.o [1]
+    .data             inited   0x2000015c      0x4  TFCThumb.o [1]
+    .data             inited   0x20000160      0x4  TFCThumb.o [1]
+    .data             inited   0x20000164      0x4  TFCThumb.o [1]
+    .data             inited   0x20000168      0x4  TFCThumb.o [1]
+    .data             inited   0x2000016c      0x4  TFCThumb.o [1]
+    .data             inited   0x20000170      0x4  TFCThumb.o [1]
+    .data             inited   0x20000174      0x4  TFCThumb.o [1]
+    .data             inited   0x20000178      0x4  TFCThumb.o [1]
+    .data             inited   0x2000017c      0x4  TFCThumb.o [1]
+    .data             inited   0x20000180      0x4  TFCThumb.o [1]
+    .data             inited   0x20000184      0x4  TFCThumb.o [1]
+    .data             inited   0x20000188      0x4  TFCThumb.o [1]
+    .data             inited   0x2000018c      0x4  TFCThumb.o [1]
+    .data             inited   0x20000190      0x4  TFCThumb.o [1]
+    .data             inited   0x20000194      0x4  TFCThumb.o [1]
+    .data             inited   0x20000198      0x4  TFCThumb.o [1]
+    .data             inited   0x2000019c      0x4  TFCThumb.o [1]
+    .data             inited   0x200001a0      0x4  TFCThumb.o [1]
+    .data             inited   0x200001a4      0x4  TFCThumb.o [1]
+    .data             inited   0x200001a8      0x4  TFCThumb.o [1]
+    .data             inited   0x200001ac      0x4  TFCThumb.o [1]
+    .data             inited   0x200001b0      0x4  TFCThumb.o [1]
+    .data             inited   0x200001b4      0x4  TFCThumb.o [1]
+    .data             inited   0x200001b8      0x4  TFCThumb.o [1]
+    .data             inited   0x200001bc      0x4  TFCThumb.o [1]
+    .data             inited   0x200001c0      0x4  stm32f10x_rcc.o [1]
+    .data             inited   0x200001c4      0x1  Beep.o [1]
+    .data             inited   0x200001c5      0x1  debug_stm32.o [1]
+                             - 0x200001c6    0x1c6
+
+"P2", part 2 of 3:                          0x2f48
+  .bss                zero     0x200001c8   0x1388  UartSwitch.o [1]
+  .bss                zero     0x20001550   0x1000  FsMode.o [1]
+  .bss                zero     0x20002550    0x3a0  QuadDAC.o [1]
+  .bss                zero     0x200028f0     0xc8  CAN.o [1]
+  .bss                zero     0x200029b8     0xc8  CAN.o [1]
+  .bss                zero     0x20002a80     0xc8  CAN.o [1]
+  .bss                zero     0x20002b48     0xc8  CAN.o [1]
+  .bss                zero     0x20002c10     0xc8  UartSwitch.o [1]
+  .bss                zero     0x20002cd8     0xc8  UartSwitch.o [1]
+  .bss                zero     0x20002da0     0xc8  UartSwitch.o [1]
+  .bss                zero     0x20002e68     0xc8  UartSwitch.o [1]
+  __DLIB_PERTHREAD    zero     0x20002f30     0x74  setlocale.o [3]
+  .bss                zero     0x20002fa4     0x3c  WinTimer.o [1]
+  .bss                zero     0x20002fe0     0x38  xsyslock.o [3]
+  .bss                zero     0x20003018     0x20  FsMode.o [1]
+  .bss                zero     0x20003038     0x20  WinTimer.o [1]
+  .bss                zero     0x20003058     0x20  WinTimer.o [1]
+  .bss                zero     0x20003078     0x10  QuadDAC.o [1]
+  .bss                zero     0x20003088      0x8  cJSON.o [1]
+  .bss                zero     0x20003090      0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x20003098      0x4  Beep.o [1]
+  .bss                zero     0x2000309c      0x4  Beep.o [1]
+  .bss                zero     0x200030a0      0x4  Beep.o [1]
+  .bss                zero     0x200030a4      0x4  CAN.o [1]
+  .bss                zero     0x200030a8      0x4  CAN.o [1]
+  .bss                zero     0x200030ac      0x4  CAN.o [1]
+  .bss                zero     0x200030b0      0x4  CAN.o [1]
+  .bss                zero     0x200030b4      0x4  CAN.o [1]
+  .bss                zero     0x200030b8      0x4  CAN.o [1]
+  .bss                zero     0x200030bc      0x4  HostComm.o [1]
+  .bss                zero     0x200030c0      0x4  OnChipADC.o [1]
+  .bss                zero     0x200030c4      0x4  TFCError.o [1]
+  .bss                zero     0x200030c8      0x4  TFCEvent.o [1]
+  .bss                zero     0x200030cc      0x4  TFCThumb.o [1]
+  .bss                zero     0x200030d0      0x4  TFCThumb.o [1]
+  .bss                zero     0x200030d4      0x4  TFCThumb.o [1]
+  .bss                zero     0x200030d8      0x4  TFCThumb.o [1]
+  .bss                zero     0x200030dc      0x4  TFCThumb.o [1]
+  .bss                zero     0x200030e0      0x4  Timer4.o [1]
+  .bss                zero     0x200030e4      0x4  UartSwitch.o [1]
+  .bss                zero     0x200030e8      0x4  UartSwitch.o [1]
+  .bss                zero     0x200030ec      0x4  UartSwitch.o [1]
+  .bss                zero     0x200030f0      0x4  UartSwitch.o [1]
+  .bss                zero     0x200030f4      0x4  UartSwitch.o [1]
+  .bss                zero     0x200030f8      0x4  WinTimer.o [1]
+  .bss                zero     0x200030fc      0x4  xgetmemchunk.o [3]
+  __DLIB_PERTHREAD    zero     0x20003100      0x4  errno.o [3]
+  .bss                zero     0x20003104      0x2  QuadDAC.o [1]
+  .bss                zero     0x20003106      0x1  FsMode.o [1]
+  .bss                zero     0x20003107      0x1  LedDriver.o [1]
+  .bss                zero     0x20003108      0x1  Timer4.o [1]
+                             - 0x20003109   0x2f41
+
+"P2", part 3 of 3:                          0x6000
+  HEAP                         0x20003110   0x4000  <Block>
+    HEAP              uninit   0x20003110   0x4000  <Block tail>
+  CSTACK                       0x20007110   0x2000  <Block>
+    CSTACK            uninit   0x20007110   0x2000  <Block tail>
+                             - 0x20009110   0x6000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x2f41:
+          0x200001c8  0x2f41
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0xcd (45% of destination):
+          0x00010a5c    0xcd
+    1 destination range, total size 0x1c6:
+          0x20000000   0x1c6
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm32f105\Debug\Obj: [1]
+    Beep.o                      960      425       17
+    CAN.o                     2 244       56      832
+    FsMode.o                    656             4 129
+    GPIO.o                    1 204      288
+    HostComm.o                  196                 4
+    InternalFlash.o             184
+    LedDriver.o               3 184      216        1
+    MainPanel.o                 716      407      220
+    OnChipADC.o                 620                 4
+    QuadDAC.o                 1 668               946
+    SPIFlash.o                1 168       36
+    TFCError.o                  212      114        8
+    TFCEvent.o                  498      386        8
+    TFCThumb.o               12 160    4 173      120
+    Timer4.o                    260                 5
+    TypeC.o                     428      148
+    UartSwitch.o              1 780             5 820
+    UserTask.o                  766      860
+    WinTimer.o                  376               128
+    cJSON.o                   5 398       58       20
+    debug_stm32.o             1 740        1        1
+    main.o                      780      548
+    misc.o                      132
+    startup_stm32f10x_cl.o      616
+    stm32f10x_adc.o             526
+    stm32f10x_can.o           1 556
+    stm32f10x_exti.o            200
+    stm32f10x_flash.o           412
+    stm32f10x_gpio.o            480
+    stm32f10x_i2c.o             412
+    stm32f10x_it.o               56
+    stm32f10x_rcc.o             540        9       20
+    stm32f10x_spi.o             144
+    stm32f10x_tim.o             546
+    stm32f10x_usart.o           432
+    system_stm32f10x.o          408
+    -------------------------------------------------
+    Total:                   43 658    7 725   12 283
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    div.o                        14
+    errno.o                      12                 4
+    exit.o                        4
+    isxxx.o                      40
+    localeconv.o                108       36       80
+    low_level_init.o              4
+    realloc.o                   376
+    setlocale.o                  36               116
+    sprintf.o                    52
+    sscanf.o                     36
+    strcat.o                     30
+    strncmp.o                    42
+    tolower.o                    20
+    vsprintf.o                   44
+    xencoding_sb.o               92
+    xgetmemchunk.o               40                 4
+    xlocale_c.o                  54
+    xmbcurmax.o                  10
+    xmbtowc.o                    32
+    xmtx.o                        8
+    xmtx2.o                       4
+    xprintffull.o             4 266
+    xscanffull.o              3 000
+    xsprout.o                    10
+    xsscin.o                     30
+    xstoflt.o                   448
+    xstoll.o                    162
+    xstopfx.o                   308
+    xstoull.o                   456
+    xstoxflt.o                  532
+    xsyslock.o                  276                56
+    xtls.o                        2
+    xwctob.o                     60
+    xwctomb.o                    26
+    xxmemxfree.o                136
+    xxmemxmalloc.o              188                 8
+    -------------------------------------------------
+    Total:                   10 958       36      268
+
+m7M_tl.a: [4]
+    DblAdd.o                    232
+    DblCmpEq.o                   32
+    DblCmpGe.o                   46
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    418
+    DblSub.o                    384
+    DblToFlt.o                  144
+    DblToI32.o                   88
+    FltAdd.o                    132
+    FltCmpGe.o                   36
+    FltCmpLe.o                   36
+    FltDiv.o                    252
+    FltMul.o                    216
+    FltSub.o                    230
+    FltToDbl.o                   78
+    FltToS32.o                   68
+    I32ToDbl.o                   48
+    I32ToFlt.o                   50
+    strtod.o                      6
+    xdnorm.o                     68
+    xdscale.o                   282
+    xdtento.o                   480
+    xdtest.o                     54
+    xstod.o                     336
+    xstold.o                    336
+    -------------------------------------------------
+    Total:                    4 680
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                  6
+    ABImemcpy.o                 118
+    ABImemmove.o                120
+    ABImemset.o                 102
+    ABImemset48.o                50
+    I64DivMod.o                 238
+    I64DivZer.o                   2
+    bwt_init3c.o
+    cexit.o                      14
+    cmain.o                      22
+    cstart_clearlocks.o
+    cstartup_M.o                 12
+    data_init3.o                 44
+    memchr.o                     88
+    packbits_init3.o            160
+    strchr.o                     22
+    strcmp.o                     66
+    strcpy.o                     68
+    strlen.o                     54
+    zero_init3.o                 34
+    -------------------------------------------------
+    Total:                    1 220
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         50        2
+    Linker created                        44   24 576
+-----------------------------------------------------
+    Grand Total:             60 586    7 807   37 127
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x000101ed          Code  Gb  cmain.o [5]
+ADC1_2_IRQHandler       0x000109b1          Code  Wk  startup_stm32f10x_cl.o [1]
+ADCPrescTable           0x200001c0     0x4  Data  Lc  stm32f10x_rcc.o [1]
+ADC_Cmd                 0x0000bd6d    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_DeInit              0x0000bcc5    0x5c  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetCalibrationStatus
+                        0x0000bdaf    0x14  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetConversionValue  0x0000bea1     0x6  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetFlagStatus       0x0000bebd    0x16  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetResetCalibrationStatus
+                        0x0000bd91    0x14  Code  Gb  stm32f10x_adc.o [1]
+ADC_Init                0x0000bd21    0x4c  Code  Gb  stm32f10x_adc.o [1]
+ADC_RegularChannelConfig
+                        0x0000bddd    0xc4  Code  Gb  stm32f10x_adc.o [1]
+ADC_ResetCalibration    0x0000bd87     0xa  Code  Gb  stm32f10x_adc.o [1]
+ADC_SoftwareStartConvCmd
+                        0x0000bdc3    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_StartCalibration    0x0000bda5     0xa  Code  Gb  stm32f10x_adc.o [1]
+AIInit                  0x000074fd    0xbe  Code  Gb  OnChipADC.o [1]
+APBAHBPrescTable        0x2000012c    0x10  Data  Lc  stm32f10x_rcc.o [1]
+AoDdsParam              0x20002550   0x3a0  Data  Gb  QuadDAC.o [1]
+AoInit                  0x000080b7    0xd2  Code  Gb  QuadDAC.o [1]
+Beep                    0x00003291    0xb6  Code  Gb  Beep.o [1]
+BeepEnable              0x000030d1    0x1a  Code  Gb  Beep.o [1]
+BeepInit                0x000030f3    0xca  Code  Gb  Beep.o [1]
+BusFault_Handler        0x0000f4a5     0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1_Config             0x00006e05   0x14c  Code  Gb  CAN.o [1]
+CAN1_Init               0x00006d8f    0x76  Code  Gb  CAN.o [1]
+CAN1_RX0_IRQHandler     0x00006f51    0x74  Code  Gb  CAN.o [1]
+CAN1_RX1_IRQHandler     0x000109bd          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN1_Rx_Buffer          0x200028f0    0xc8  Data  Gb  CAN.o [1]
+CAN1_Rx_End_Index       0x200030a8     0x4  Data  Gb  CAN.o [1]
+CAN1_Rx_Start_Index     0x200030a4     0x4  Data  Gb  CAN.o [1]
+CAN1_SCE_IRQHandler     0x000109c1          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN1_TX_IRQHandler      0x000109b5          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN1_TX_Repeat_No       0x2000014c     0x4  Data  Gb  CAN.o [1]
+CAN1_Tx_Buffer          0x20002a80    0xc8  Data  Gb  CAN.o [1]
+CAN1_Tx_Index           0x200030b4     0x4  Data  Gb  CAN.o [1]
+CAN2_Config             0x0000709b   0x14c  Code  Gb  CAN.o [1]
+CAN2_Init               0x0000702f    0x6c  Code  Gb  CAN.o [1]
+CAN2_RX0_IRQHandler     0x000071e7    0x5e  Code  Gb  CAN.o [1]
+CAN2_RX1_IRQHandler     0x00010a51          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN2_Rx_Buffer          0x200029b8    0xc8  Data  Gb  CAN.o [1]
+CAN2_Rx_End_Index       0x200030b0     0x4  Data  Gb  CAN.o [1]
+CAN2_Rx_Start_Index     0x200030ac     0x4  Data  Gb  CAN.o [1]
+CAN2_SCE_IRQHandler     0x00010a55          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN2_TX_IRQHandler      0x00010a49          Code  Wk  startup_stm32f10x_cl.o [1]
+CAN2_TX_Repeat_No       0x20000150     0x4  Data  Gb  CAN.o [1]
+CAN2_Tx_Buffer          0x20002b48    0xc8  Data  Gb  CAN.o [1]
+CAN2_Tx_Index           0x200030b8     0x4  Data  Gb  CAN.o [1]
+CANFilterConfig         0x00007399    0xfc  Code  Gb  CAN.o [1]
+CAN_Baud_Config         0x00006c39   0x156  Code  Gb  CAN.o [1]
+CAN_DeInit              0x0000b6b1    0x36  Code  Gb  stm32f10x_can.o [1]
+CAN_FilterInit          0x0000b7f7   0x112  Code  Gb  stm32f10x_can.o [1]
+CAN_ITConfig            0x0000bc77    0x18  Code  Gb  stm32f10x_can.o [1]
+CAN_Init                0x0000b6e7   0x110  Code  Gb  stm32f10x_can.o [1]
+CAN_OperatingModeRequest
+                        0x0000bbc9    0xae  Code  Gb  stm32f10x_can.o [1]
+CAN_Receive             0x0000bae1    0xe8  Code  Gb  stm32f10x_can.o [1]
+CAN_SendData            0x0000729b    0x7a  Code  Gb  CAN.o [1]
+CAN_StructInit          0x0000b909    0x2e  Code  Gb  stm32f10x_can.o [1]
+CAN_Transmit            0x0000b937   0x11e  Code  Gb  stm32f10x_can.o [1]
+CAN_TransmitStatus      0x0000ba55    0x8c  Code  Gb  stm32f10x_can.o [1]
+CSTACK$$Base            0x20007110           --   Gb  - Linker created -
+CSTACK$$Limit           0x20009110           --   Gb  - Linker created -
+Can1RepeatSendingCallback
+                        0x00007315    0x42  Code  Gb  CAN.o [1]
+Can2RepeatSendingCallback
+                        0x00007357    0x42  Code  Gb  CAN.o [1]
+CanTiming               0x0000f4b0    0x34  Data  Gb  CAN.o [1]
+CheckCrc                0x00004f39    0x42  Code  Gb  LedDriver.o [1]
+CheckHostCommStatus     0x00009f09   0x1de  Code  Gb  UserTask.o [1]
+ClearCanRxBuffer        0x00007495    0x28  Code  Gb  CAN.o [1]
+ClearDoErrorFlag        0x00005779    0x24  Code  Gb  LedDriver.o [1]
+ClearTFCError           0x00004e71     0xe  Code  Gb  TFCError.o [1]
+ClearTFCEvent           0x00006a45     0xe  Code  Gb  TFCEvent.o [1]
+ClearUart1RxBuffer      0x00006361    0x1e  Code  Gb  UartSwitch.o [1]
+ClearUart2RxBuffer      0x00006431    0x1e  Code  Gb  UartSwitch.o [1]
+ClearUart3RxBuffer      0x00006501    0x22  Code  Gb  UartSwitch.o [1]
+ClearUart4RxBuffer      0x000067bd    0x1a  Code  Gb  UartSwitch.o [1]
+ClearUart5RxBuffer      0x000068fb    0x1a  Code  Gb  UartSwitch.o [1]
+DMA1_Channel1_IRQHandler
+                        0x00010995          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel2_IRQHandler
+                        0x00010999          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel3_IRQHandler
+                        0x0001099d          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel4_IRQHandler
+                        0x000109a1          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel5_IRQHandler
+                        0x000109a5          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel6_IRQHandler
+                        0x000109a9          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA1_Channel7_IRQHandler
+                        0x000109ad          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA2_Channel1_IRQHandler
+                        0x00010a2d          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA2_Channel2_IRQHandler
+                        0x00010a31          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA2_Channel3_IRQHandler
+                        0x00010a35          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA2_Channel4_IRQHandler
+                        0x00010a39          Code  Wk  startup_stm32f10x_cl.o [1]
+DMA2_Channel5_IRQHandler
+                        0x00010a3d          Code  Wk  startup_stm32f10x_cl.o [1]
+DebugMon_Handler        0x0000f4ab     0x2  Code  Gb  stm32f10x_it.o [1]
+DelayMs                 0x00009ae3    0x16  Code  Gb  HostComm.o [1]
+DelayUs                 0x00009ac7    0x1c  Code  Gb  HostComm.o [1]
+DoFreqWrite             0x000053cd   0x112  Code  Gb  LedDriver.o [1]
+DoInit                  0x00005771     0x8  Code  Gb  LedDriver.o [1]
+DoIoWrite               0x0000558b    0x9e  Code  Gb  LedDriver.o [1]
+DoLedDriverInit         0x00005629   0x148  Code  Gb  LedDriver.o [1]
+DoOcpWrite              0x0000535d    0x70  Code  Gb  LedDriver.o [1]
+DoPwmModeWrite          0x000054df    0xac  Code  Gb  LedDriver.o [1]
+DoPwmUsingStatus        0x20003107     0x1  Data  Lc  LedDriver.o [1]
+DoSelfTest              0x000059b3   0x12e  Code  Gb  LedDriver.o [1]
+DoUnprotectedIoModeWrite
+                        0x000052cb    0x92  Code  Gb  LedDriver.o [1]
+DoUnprotectedPwmModeWrite
+                        0x00005197   0x134  Code  Gb  LedDriver.o [1]
+ERROR_MASK              0x20000154     0x4  Data  Gb  TFCError.o [1]
+ETH_IRQHandler          0x00010a41          Code  Wk  startup_stm32f10x_cl.o [1]
+ETH_WKUP_IRQHandler     0x00010a45          Code  Wk  startup_stm32f10x_cl.o [1]
+EVENT_MASK              0x20000158     0x4  Data  Gb  TFCEvent.o [1]
+EXTI0_IRQHandler        0x00004ebf    0x1c  Code  Gb  TFCError.o [1]
+EXTI15_10_IRQHandler    0x00006b47    0x76  Code  Gb  TFCEvent.o [1]
+EXTI1_IRQHandler        0x00010985          Code  Wk  startup_stm32f10x_cl.o [1]
+EXTI2_IRQHandler        0x00010989          Code  Wk  startup_stm32f10x_cl.o [1]
+EXTI3_IRQHandler        0x00004edb    0x1c  Code  Gb  TFCError.o [1]
+EXTI4_IRQHandler        0x00010991          Code  Wk  startup_stm32f10x_cl.o [1]
+EXTI9_5_IRQHandler      0x00006ad5    0x72  Code  Gb  TFCEvent.o [1]
+EXTI_ClearITPendingBit  0x0000a325     0x6  Code  Gb  stm32f10x_exti.o [1]
+EXTI_GetITStatus        0x0000a301    0x24  Code  Gb  stm32f10x_exti.o [1]
+EXTI_Init               0x0000a279    0x88  Code  Gb  stm32f10x_exti.o [1]
+EventQuene              0x20003038    0x20  Data  Gb  WinTimer.o [1]
+EventQueneCallBack      0x20002fa4    0x3c  Data  Gb  WinTimer.o [1]
+EventQueneForAccuracy   0x20003058    0x20  Data  Gb  WinTimer.o [1]
+FLASH_ClearFlag         0x0000d141     0x8  Code  Gb  stm32f10x_flash.o [1]
+FLASH_ErasePage         0x0000d057    0x64  Code  Gb  stm32f10x_flash.o [1]
+FLASH_GetStatus         0x0000d149    0x2c  Code  Gb  stm32f10x_flash.o [1]
+FLASH_IRQHandler        0x00010979          Code  Wk  startup_stm32f10x_cl.o [1]
+FLASH_ProgramWord       0x0000d0bb    0x86  Code  Gb  stm32f10x_flash.o [1]
+FLASH_Unlock            0x0000d041    0x16  Code  Gb  stm32f10x_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x0000d191    0x30  Code  Gb  stm32f10x_flash.o [1]
+FSModeDetection         0x00009461    0xd0  Code  Gb  FsMode.o [1]
+FatalErrorReport        0x0000e80f    0x28  Code  Gb  main.o [1]
+GPIOInit                0x00008a75   0x388  Code  Gb  GPIO.o [1]
+GPIO_EXTILineConfig     0x0000876b    0x50  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_Init               0x000085e5    0xcc  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PinRemapConfig     0x000086fb    0x70  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputDataBit   0x000086b1    0x16  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadOutputDataBit  0x000086c7    0x16  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x000086e3     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x000086dd     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_WriteBit           0x000086e9    0x12  Code  Gb  stm32f10x_gpio.o [1]
+GetAIVal                0x000076f5    0x5a  Code  Gb  OnChipADC.o [1]
+GetCPULoadResult        0x00008a4d     0xa  Code  Gb  Timer4.o [1]
+GetCan1RxStatus         0x00006fc5    0x6a  Code  Gb  CAN.o [1]
+GetCan2RxStatus         0x00007245    0x56  Code  Gb  CAN.o [1]
+GetData                 0x000069a5    0x42  Code  Gb  UartSwitch.o [1]
+GetDeviceHardwareId     0x00008e6b    0x66  Code  Gb  GPIO.o [1]
+GetDoADCVal             0x0000582f   0x184  Code  Gb  LedDriver.o [1]
+GetErrorStatus          0x00004ef7    0x34  Code  Gb  TFCError.o [1]
+GetFSModeStatus         0x00009531    0xfc  Code  Gb  FsMode.o [1]
+GetIntArrayMax          0x00009a9f    0x28  Code  Gb  HostComm.o [1]
+GetKeyStatus            0x00006bdd    0x4e  Code  Gb  TFCEvent.o [1]
+GetLedStatus            0x00008e33    0x38  Code  Gb  GPIO.o [1]
+GetRandomCharFromADC    0x000075e7    0x84  Code  Gb  OnChipADC.o [1]
+GetSystemParam          0x00004c0f    0x16  Code  Gb  MainPanel.o [1]
+GetSystemTime           0x00004ae3     0x6  Code  Gb  WinTimer.o [1]
+GetTFCError             0x00004e7f     0x6  Code  Gb  TFCError.o [1]
+GetTFCEvent             0x00006a53     0x6  Code  Gb  TFCEvent.o [1]
+GetUart1RxStatus        0x0000637f    0x48  Code  Gb  UartSwitch.o [1]
+GetUart2RxStatus        0x0000644f    0x48  Code  Gb  UartSwitch.o [1]
+GetUart3RxStatus        0x00006523    0xf4  Code  Gb  UartSwitch.o [1]
+GetUart4RxStatus        0x000067d7    0xca  Code  Gb  UartSwitch.o [1]
+GetUart5RxStatus        0x00006915    0x3c  Code  Gb  UartSwitch.o [1]
+GetUserParam            0x00004d7b    0x30  Code  Gb  MainPanel.o [1]
+Get_Device_Guid         0x000087c5    0x52  Code  Gb  TypeC.o [1]
+HEAP$$Base              0x20003110           --   Gb  - Linker created -
+HEAP$$Limit             0x20007110           --   Gb  - Linker created -
+HardFault_Handler       0x0000f49b     0x8  Code  Gb  stm32f10x_it.o [1]
+HardwareVersionInfo     0x0000ed6c   0x120  Data  Gb  GPIO.o [1]
+I2C1_BufferWrite        0x00007f8b    0x8e  Code  Gb  QuadDAC.o [1]
+I2C1_ER_IRQHandler      0x000109e9          Code  Wk  startup_stm32f10x_cl.o [1]
+I2C1_EV_IRQHandler      0x000109e5          Code  Wk  startup_stm32f10x_cl.o [1]
+I2C1_Init               0x00007e9d    0x72  Code  Gb  QuadDAC.o [1]
+I2C2_ER_IRQHandler      0x000109f1          Code  Wk  startup_stm32f10x_cl.o [1]
+I2C2_EV_IRQHandler      0x000109ed          Code  Wk  startup_stm32f10x_cl.o [1]
+I2C_CheckEvent          0x0000c041    0x30  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Cmd                 0x0000bfcd    0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTART       0x0000bfe9    0x1e  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTOP        0x0000c007    0x1e  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Init                0x0000bed5    0xea  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Send7bitAddress     0x0000c02b    0x16  Code  Gb  stm32f10x_i2c.o [1]
+I2C_SendData            0x0000c025     0x6  Code  Gb  stm32f10x_i2c.o [1]
+IS_DEBUG_MODE           0x200001c5     0x1  Data  Gb  debug_stm32.o [1]
+InitSPIFlashCode        0x00008817    0x98  Code  Gb  TypeC.o [1]
+InternalFlashOnePageRead
+                        0x0000a24f    0x2a  Code  Gb  InternalFlash.o [1]
+InternalFlashOnePageWrite
+                        0x0000a1c1    0x8e  Code  Gb  InternalFlash.o [1]
+IsBeepEnabled           0x000030eb     0x8  Code  Gb  Beep.o [1]
+KillTimer               0x00004a87    0x20  Code  Gb  WinTimer.o [1]
+LoadDefaultSystemParam  0x00004c97    0x50  Code  Gb  MainPanel.o [1]
+LoadDefaultUserParam    0x00004df5    0x40  Code  Gb  MainPanel.o [1]
+MemManage_Handler       0x0000f4a3     0x2  Code  Gb  stm32f10x_it.o [1]
+MemoryInit              0x0000e6d9    0x18  Code  Gb  main.o [1]
+ModelBeep               0x000031e3    0xae  Code  Gb  Beep.o [1]
+NMI_Handler             0x0000f499     0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Init               0x00009e47    0x66  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x00009e3d     0xa  Code  Gb  misc.o [1]
+NVIC_SystemReset        0x00009a89    0x16  Code  Lc  HostComm.o [1]
+NVIC_SystemReset        0x00006345    0x1c  Code  Lc  UartSwitch.o [1]
+NVIC_SystemReset        0x00009ec1    0x16  Code  Lc  UserTask.o [1]
+NVIC_SystemReset        0x0000f479    0x16  Code  Lc  stm32f10x_it.o [1]
+OTG_FS_IRQHandler       0x00010a59          Code  Wk  startup_stm32f10x_cl.o [1]
+OTG_FS_WKUP_IRQHandler  0x00010a11          Code  Wk  startup_stm32f10x_cl.o [1]
+OnTimer                 0x0000a1bd     0x2  Code  Gb  UserTask.o [1]
+PVD_IRQHandler          0x0001096d          Code  Wk  startup_stm32f10x_cl.o [1]
+PendSV_Handler          0x0000f4ad     0x2  Code  Gb  stm32f10x_it.o [1]
+PlayMusicMultiThread    0x0000339f    0xc2  Code  Gb  Beep.o [1]
+PlayMusicMultiThreadInit
+                        0x00003347    0x58  Code  Gb  Beep.o [1]
+PrintSystemParam        0x00004b99    0x5a  Code  Gb  MainPanel.o [1]
+RCC_ADCCLKConfig        0x00009649    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x00009789    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x000097c9    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x00009769    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x000097a9    0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x0000965d   0x10c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus       0x000097e9    0x44  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x0001097d          Code  Wk  startup_stm32f10x_cl.o [1]
+RTCAlarm_IRQHandler     0x00010a0d          Code  Wk  startup_stm32f10x_cl.o [1]
+RTC_IRQHandler          0x00010975          Code  Wk  startup_stm32f10x_cl.o [1]
+ReadFSModeConfig        0x000093b9    0x30  Code  Gb  FsMode.o [1]
+Region$$Table$$Base     0x0000fdb8           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000fde4           --   Gb  - Linker created -
+ResetSystemInformation  0x00004c25    0x72  Code  Gb  MainPanel.o [1]
+ResetTypeDetection      0x0000e6f1    0xc2  Code  Gb  main.o [1]
+ResetUserInformation    0x00004dab    0x4a  Code  Gb  MainPanel.o [1]
+RunUserInterface        0x00009b01    0x3c  Code  Gb  HostComm.o [1]
+SPI1_IRQHandler         0x000109f5          Code  Wk  startup_stm32f10x_cl.o [1]
+SPI2_IRQHandler         0x000109f9          Code  Wk  startup_stm32f10x_cl.o [1]
+SPI3_IRQHandler         0x00010a19          Code  Wk  startup_stm32f10x_cl.o [1]
+SPIFlashVarify          0x000088af    0x92  Code  Gb  TypeC.o [1]
+SPI_Cmd                 0x0000c251    0x1c  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_DMACmd          0x0000c26d    0x18  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_GetFlagStatus   0x0000c28d    0x14  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ReceiveData     0x0000c289     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x0000c285     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x0000c211    0x40  Code  Gb  stm32f10x_spi.o [1]
+SVC_Handler             0x0000f4a9     0x2  Code  Gb  stm32f10x_it.o [1]
+SendData                0x00006243    0x52  Code  Gb  debug_stm32.o [1]
+SetAoChannelVol         0x0000803f    0x78  Code  Gb  QuadDAC.o [1]
+SetAoPowerState         0x00008019    0x26  Code  Gb  QuadDAC.o [1]
+SetAoSupplyVol          0x00008471    0x4a  Code  Gb  QuadDAC.o [1]
+SetAoVoltageCtrlDuty    0x00008457    0x1a  Code  Gb  QuadDAC.o [1]
+SetDebugMode            0x000062cd    0x18  Code  Gb  debug_stm32.o [1]
+SetLedStatus            0x00008dfd    0x36  Code  Gb  GPIO.o [1]
+SetPeriodicTask         0x0000a12f    0x46  Code  Gb  UserTask.o [1]
+SetSysClock             0x0000ea43     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x0000ea4b   0x112  Code  Lc  system_stm32f10x.o [1]
+SetTFCError             0x00004e65     0xc  Code  Gb  TFCError.o [1]
+SetTFCEvent             0x00006a39     0xc  Code  Gb  TFCEvent.o [1]
+SetTimer                0x00004aa7    0x3c  Code  Gb  WinTimer.o [1]
+ShortCircuitDetect      0x0000579d    0x92  Code  Gb  LedDriver.o [1]
+SoftwareVersionInfo     0x00010460    0x14  Data  Gb  TFCThumb.o [1]
+StartFSMode             0x00009427    0x32  Code  Gb  FsMode.o [1]
+StopFSMode              0x00009459     0x8  Code  Gb  FsMode.o [1]
+StopNormalBeep          0x000031bd    0x26  Code  Gb  Beep.o [1]
+StoreSystemParam        0x00004bf3    0x1c  Code  Gb  MainPanel.o [1]
+StoreUserParam          0x00004ce7    0x94  Code  Gb  MainPanel.o [1]
+SysTick_Handler         0x0000f4af     0x2  Code  Gb  stm32f10x_it.o [1]
+SystemInit              0x0000e9e5    0x5e  Code  Gb  system_stm32f10x.o [1]
+SystemInitConfig        0x0000e7b3    0x5c  Code  Gb  main.o [1]
+SystemSoftReset         0x00009af9     0x8  Code  Gb  HostComm.o [1]
+TAMPER_IRQHandler       0x00010971          Code  Wk  startup_stm32f10x_cl.o [1]
+TFCCallbackAiRead       0x00000e2d    0x8c  Code  Gb  TFCThumb.o [1]
+TFCCallbackAoChannelWrite
+                        0x00001465   0x1a2  Code  Gb  TFCThumb.o [1]
+TFCCallbackAoWrite      0x00000f35   0x4fe  Code  Gb  TFCThumb.o [1]
+TFCCallbackBeep         0x00000151   0x106  Code  Gb  TFCThumb.o [1]
+TFCCallbackCanBaud      0x00001dad   0x1ce  Code  Gb  TFCThumb.o [1]
+TFCCallbackCanFilter    0x000024ad   0x2a6  Code  Gb  TFCThumb.o [1]
+TFCCallbackCanRead      0x00000cb1   0x16a  Code  Gb  TFCThumb.o [1]
+TFCCallbackCanWrite     0x0000084d   0x43e  Code  Gb  TFCThumb.o [1]
+TFCCallbackCpuId        0x0000246b    0x1e  Code  Gb  TFCThumb.o [1]
+TFCCallbackCpuUsage     0x00002759    0x20  Code  Gb  TFCThumb.o [1]
+TFCCallbackDoRegRead    0x000019e5    0x86  Code  Gb  TFCThumb.o [1]
+TFCCallbackDoRegWrite   0x00001975    0x66  Code  Gb  TFCThumb.o [1]
+TFCCallbackDoWrite      0x00001641   0x304  Code  Gb  TFCThumb.o [1]
+TFCCallbackEepromRead   0x00000375    0x3c  Code  Gb  TFCThumb.o [1]
+TFCCallbackEepromWrite  0x00000317    0x5e  Code  Gb  TFCThumb.o [1]
+TFCCallbackGetError     0x00001aad    0x24  Code  Gb  TFCThumb.o [1]
+TFCCallbackGetKey       0x00001949    0x20  Code  Gb  TFCThumb.o [1]
+TFCCallbackIOOperation  0x00001af5   0x294  Code  Gb  TFCThumb.o [1]
+TFCCallbackLookupTable  0x0000e3ac   0x32c  Data  Gb  UserTask.o [1]
+TFCCallbackLookupTableLen
+                        0x0001093c     0x4  Data  Gb  UserTask.o [1]
+TFCCallbackMacroRecord  0x00002d69   0x1ac  Code  Gb  TFCThumb.o [1]
+TFCCallbackMusic        0x00000257    0xac  Code  Gb  TFCThumb.o [1]
+TFCCallbackSelfTest     0x000003b1   0x1d0  Code  Gb  TFCThumb.o [1]
+TFCCallbackSetEventMask
+                        0x00001a71    0x16  Code  Gb  TFCThumb.o [1]
+TFCCallbackSwVersion    0x00000303    0x14  Code  Gb  TFCThumb.o [1]
+TFCCallbackTFCConfig    0x00002079   0x3f2  Code  Gb  TFCThumb.o [1]
+TFCCallbackTest         0x00001a87    0x20  Code  Gb  TFCThumb.o [1]
+TFCCallbackTfcInfo      0x000027f1   0x54e  Code  Gb  TFCThumb.o [1]
+TFCCallbackUartBaud     0x00001f7b    0xa8  Code  Gb  TFCThumb.o [1]
+TFCCallbackUartRead     0x000006e3   0x164  Code  Gb  TFCThumb.o [1]
+TFCCallbackUartWrite    0x00000585   0x15e  Code  Gb  TFCThumb.o [1]
+TFCEventCheck           0x0000a0e7    0x48  Code  Gb  UserTask.o [1]
+TFCReportError          0x00004e85    0x3a  Code  Gb  TFCError.o [1]
+TFCReportEvent          0x00006a59    0x7c  Code  Gb  TFCEvent.o [1]
+TIM1_BRK_IRQHandler     0x000109c9          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM1_CC_IRQHandler      0x000109d5          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x000109d1          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM1_UP_IRQHandler      0x000109cd          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM2_IRQHandler         0x00008189   0x21e  Code  Gb  QuadDAC.o [1]
+TIM3_IRQHandler         0x000109dd          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM4_IRQHandler         0x000089ed    0x60  Code  Gb  Timer4.o [1]
+TIM5_IRQHandler         0x00004a19    0x6e  Code  Gb  WinTimer.o [1]
+TIM6_IRQHandler         0x00010a25          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM7_IRQHandler         0x00010a29          Code  Wk  startup_stm32f10x_cl.o [1]
+TIM_ARRPreloadConfig    0x00009a03    0x1c  Code  Gb  stm32f10x_tim.o [1]
+TIM_ClearFlag           0x00009a49     0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_ClearITPendingBit   0x00009a7f     0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                 0x000099ad    0x1c  Code  Gb  stm32f10x_tim.o [1]
+TIM_CtrlPWMOutputs      0x000099c9    0x22  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x00009a51    0x2e  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig            0x000099eb    0x18  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC2Init             0x0000989b    0x86  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC2PreloadConfig    0x00009a1f    0x14  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC3Init             0x00009921    0x84  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC3PreloadConfig    0x00009a33    0x12  Code  Gb  stm32f10x_tim.o [1]
+TIM_SetCounter          0x00009a45     0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x00009865    0x36  Code  Gb  stm32f10x_tim.o [1]
+Timer2Init              0x00007f0f    0x7c  Code  Gb  QuadDAC.o [1]
+Timer3Init              0x000083a7    0xb0  Code  Gb  QuadDAC.o [1]
+Timer4Init              0x00008971    0x7c  Code  Gb  Timer4.o [1]
+Timer5Init              0x00004985    0x94  Code  Gb  WinTimer.o [1]
+ToggleLedFunction       0x00009ed7    0x32  Code  Gb  UserTask.o [1]
+UART1_Init              0x00005e1f    0xbc  Code  Gb  debug_stm32.o [1]
+UART1_PrintArray        0x000061cb    0x18  Code  Gb  debug_stm32.o [1]
+UART1_SendByte          0x00005edb    0x2c  Code  Gb  debug_stm32.o [1]
+UART2_Init              0x00005c49    0xc8  Code  Gb  debug_stm32.o [1]
+UART2_PrintArray        0x000061e3    0x18  Code  Gb  debug_stm32.o [1]
+UART2_SendByte          0x00005d11    0x2c  Code  Gb  debug_stm32.o [1]
+UART3_Init              0x00005f07    0xc4  Code  Gb  debug_stm32.o [1]
+UART3_PrintArray        0x000061fb    0x18  Code  Gb  debug_stm32.o [1]
+UART3_PrintStr          0x0000619f    0x16  Code  Gb  debug_stm32.o [1]
+UART3_SendByte          0x00005fcb    0x20  Code  Gb  debug_stm32.o [1]
+UART4_IRQHandler        0x000068a1    0x5a  Code  Gb  UartSwitch.o [1]
+UART4_Init              0x00005feb    0xb6  Code  Gb  debug_stm32.o [1]
+UART4_PrintArray        0x00006213    0x18  Code  Gb  debug_stm32.o [1]
+UART4_PrintStr          0x000061b5    0x16  Code  Gb  debug_stm32.o [1]
+UART4_SendByte          0x000060a1    0x1c  Code  Gb  debug_stm32.o [1]
+UART5_IRQHandler        0x00006951    0x54  Code  Gb  UartSwitch.o [1]
+UART5_Init              0x000060bd    0xbc  Code  Gb  debug_stm32.o [1]
+UART5_PrintArray        0x0000622b    0x18  Code  Gb  debug_stm32.o [1]
+UART5_SendByte          0x00006179    0x26  Code  Gb  debug_stm32.o [1]
+UART_Config             0x00005d3d    0xe2  Code  Gb  debug_stm32.o [1]
+USART1_IRQHandler       0x000063c7    0x6a  Code  Gb  UartSwitch.o [1]
+USART2_IRQHandler       0x00006497    0x6a  Code  Gb  UartSwitch.o [1]
+USART3_IRQHandler       0x00006617   0x1a6  Code  Gb  UartSwitch.o [1]
+USART_ClearFlag         0x0000b603     0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_ClearITPendingBit
+                        0x0000b66d    0x18  Code  Gb  stm32f10x_usart.o [1]
+USART_Cmd               0x0000b575    0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x0000b5ef    0x14  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x0000b60b    0x62  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x0000b591    0x4e  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x0000b4d5    0x98  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData       0x0000b5e7     0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData          0x0000b5df     0x8  Code  Gb  stm32f10x_usart.o [1]
+Uart1_Rx_Buffer         0x20002c10    0xc8  Data  Gb  UartSwitch.o [1]
+Uart1_Rx_Index          0x200030e4     0x4  Data  Gb  UartSwitch.o [1]
+Uart2_Rx_Buffer         0x20002cd8    0xc8  Data  Gb  UartSwitch.o [1]
+Uart2_Rx_Index          0x200030e8     0x4  Data  Gb  UartSwitch.o [1]
+Uart3_Rx_Buffer         0x200001c8  0x1388  Data  Gb  UartSwitch.o [1]
+Uart3_Rx_Index          0x200030ec     0x4  Data  Gb  UartSwitch.o [1]
+Uart4_Rx_Buffer         0x20002da0    0xc8  Data  Gb  UartSwitch.o [1]
+Uart4_Rx_Index          0x200030f0     0x4  Data  Gb  UartSwitch.o [1]
+Uart5_Rx_Buffer         0x20002e68    0xc8  Data  Gb  UartSwitch.o [1]
+Uart5_Rx_Index          0x200030f4     0x4  Data  Gb  UartSwitch.o [1]
+UsageFault_Handler      0x0000f4a7     0x2  Code  Gb  stm32f10x_it.o [1]
+WWDG_IRQHandler         0x00010969          Code  Wk  startup_stm32f10x_cl.o [1]
+WriteFSModeConfig       0x000093e9    0x3e  Code  Gb  FsMode.o [1]
+_EncodingSb_Mbtowc      0x0000e1c9    0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x0000e1ad    0x1c  Code  Gb  xencoding_sb.o [3]
+_GenldFull              0x0000b231   0x258  Code  Lc  xprintffull.o [3]
+_GetN                   0x0000c489    0x22  Code  Lc  xscanffull.o [3]
+_GetfldFull             0x0000c6a1   0x10c  Code  Lc  xscanffull.o [3]
+_GetfloatFull           0x0000cc39   0x3e8  Code  Lc  xscanffull.o [3]
+_GetintFull             0x0000ca65   0x1d4  Code  Lc  xscanffull.o [3]
+_GetstrFull             0x0000c7ad   0x2b8  Code  Lc  xscanffull.o [3]
+_IsdstStr               0x20002f34     0x4  Data  Gb  setlocale.o [3]
+_LdtobFull              0x0000ae21   0x400  Code  Lc  xprintffull.o [3]
+_LitobFull              0x0000acfb   0x126  Code  Lc  xprintffull.o [3]
+_LocaleC_isalpha        0x0000e375    0x16  Code  Gb  xlocale_c.o [3]
+_LocaleC_isspace        0x0000e38b    0x14  Code  Gb  xlocale_c.o [3]
+_LocaleC_tolower        0x0000c2c5     0xc  Code  Gb  xlocale_c.o [3]
+_LocaleEncoding         0x0000c2b3     0xe  Code  Gb  setlocale.o [3]
+_LocaleForCat           0x0000c2a1    0x12  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x20002f54    0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x20002f38    0x1c  Data  Gb  setlocale.o [3]
+_Locale_lconv           0x200000dc    0x50  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x0000d1dd    0x20  Code  Gb  xmbtowc.o [3]
+_PrintfFull             0x0000a429   0x5e6  Code  Gb  xprintffull.o [3]
+_PutcharsFull           0x0000b489    0x2e  Code  Lc  xprintffull.o [3]
+_PutstrFull             0x0000aa21   0x2da  Code  Lc  xprintffull.o [3]
+_SProut                 0x000079ff     0xa  Code  Gb  xsprout.o [3]
+_SScin                  0x0000779b    0x1e  Code  Gb  xsscin.o [3]
+_ScanfFull              0x0000c4ab   0x1f4  Code  Gb  xscanffull.o [3]
+_Stoflt                 0x0000d7d9   0x1c0  Code  Gb  xstoflt.o [3]
+_Stopfx                 0x0000d6a5   0x134  Code  Gb  xstopfx.o [3]
+_Stoxflt                0x0000db79   0x1e0  Code  Gb  xstoxflt.o [3]
+_TzoneStr               0x20002f30     0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x0000d335    0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_cdcmpeq         0x0000e349          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x00009bad          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x00009b7d          Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmple         0x00007e55          Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x00007e79          Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x00007bad          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00009bdd          Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x00009c09          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x0000a341          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x000077b9          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00007a09          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x00009c35          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x0000e369     0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x00005bdd          Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x00007c3d          Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x0000c071          Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x00007d59          Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x00007c81          Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x0000c0f5          Code  Gb  FltSub.o [4]
+__aeabi_i2d             0x00006315          Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x00007769          Code  Gb  I32ToFlt.o [4]
+__aeabi_ldiv0           0x0000e345          Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x00008521          Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy          0x0000856d          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x0000858d          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x0000858d          Code  Gb  ABImemcpy.o [5]
+__aeabi_memmove         0x0000ecf5          Code  Gb  ABImemmove.o [5]
+__aeabi_memmove4        0x0000ecf5          Code  Gb  ABImemmove.o [5]
+__aeabi_memmove8        0x0000ecf5          Code  Gb  ABImemmove.o [5]
+__aeabi_memset          0x0000c2d1          Code  Gb  ABImemset.o [5]
+__aeabi_ui2d            0x00006329          Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x0000777d          Code  Gb  I32ToFlt.o [4]
+__aeabi_uldivmod        0x0000d3d9          Code  Gb  I64DivMod.o [5]
+__cexit_clearlocks      0x0001020f          Code  Gb  cexit.o [5]
+__cmain                 0x000101ed          Code  Gb  cmain.o [5]
+__cstart_clearlocks     0x00010a5c          Data  Gb  cstart_clearlocks.o [5]
+__data_Aldata           0x20003090     0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x0000e31d    0x28  Code  Gb  xgetmemchunk.o [3]
+__data_myrealloc        0x0000eb7d    0xca  Code  Lc  realloc.o [3]
+__exit                  0x0001021d    0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x0000d4c7    0x44  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x0000d50d   0x106  Code  Gb  xdscale.o [4]
+__iar_Dtentox           0x0000d9eb   0x130  Code  Gb  xdtento.o [4]
+__iar_Dtest             0x00009db5    0x36  Code  Gb  xdtest.o [4]
+__iar_Errno             0x20003100     0x4  Data  Gb  errno.o [3]
+__iar_Locale_lconv_init
+                        0x0000d629    0x3a  Code  Gb  localeconv.o [3]
+__iar_Locksyslock       0x0000e27d    0x88  Code  Gb  xsyslock.o [3]
+__iar_Mbcurmax          0x0000d26d     0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x0000d215          Code  Gb  memchr.o [5]
+__iar_Memset            0x0000c2d1          Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x0000c1dd          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x0000c1dd          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x0000c2d9          Code  Gb  ABImemset.o [5]
+__iar_SB                0x00010a5c          Data  Gb  bwt_init3c.o [5]
+__iar_Stod              0x0000c485     0x4  Code  Gb  xstod.o [4]
+__iar_Stodx             0x0000c339   0x140  Code  Gb  xstod.o [4]
+__iar_Stold             0x0000e1a9     0x4  Code  Gb  xstold.o [4]
+__iar_Stoldx            0x0000e05d   0x140  Code  Gb  xstold.o [4]
+__iar_Stoll             0x0000de8f     0x4  Code  Gb  xstoll.o [3]
+__iar_Stollx            0x0000ddf1    0x9e  Code  Gb  xstoll.o [3]
+__iar_Stoull            0x0000e009     0x4  Code  Gb  xstoull.o [3]
+__iar_Stoullx           0x0000de95   0x174  Code  Gb  xstoull.o [3]
+__iar_Strchr            0x0000d1fd          Code  Gb  strchr.o [5]
+__iar_Unlocksyslock     0x0000e305    0x12  Code  Gb  xsyslock.o [3]
+__iar_Wctob             0x0000dd8d    0x34  Code  Gb  xwctob.o [3]
+__iar_clearlocks        0x0000e209    0x74  Code  Gb  xsyslock.o [3]
+__iar_d2uiz             0x00009c15          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x0000a355          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x0000f8e1    0x2c  Code  Gb  data_init3.o [5]
+__iar_default_requirements$$_Printf<unknown>printf {Abs}
+                        0x00000000           --   Gb  debug_stm32.o [1]
+__iar_default_requirements$$_Printf<unknown>sprintf {Abs}
+                        0x00000000           --   Gb  sprintf.o [3]
+__iar_default_requirements$$_Printf<unknown>vsprintf {Abs}
+                        0x00000000           --   Gb  vsprintf.o [3]
+__iar_default_requirements$$_Scanf<unknown>sscanf {Abs}
+                        0x00000000           --   Gb  sscanf.o [3]
+__iar_dlib_perthread_access
+                        0x0000d6a3     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x00009c49          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x00009c5b          Code  Gb  DblSub.o [4]
+__iar_fadd              0x0000c081          Code  Gb  FltAdd.o [4]
+__iar_file_Mtxdst       0x0000e3a1     0x2  Code  Gb  xmtx2.o [3]
+__iar_file_Mtxinit      0x0000e39f     0x2  Code  Gb  xmtx2.o [3]
+__iar_fsub              0x0000c105          Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x0000c115          Code  Gb  FltSub.o [4]
+__iar_packbits_init3    0x0000ef49    0xa0  Code  Gb  packbits_init3.o [5]
+__iar_program_start     0x000107ed          Code  Gb  cstartup_M.o [5]
+__iar_provide$$_Printf<flags,floats,hex_floats,int_specials,long_longs,multibytes,n_formatters,qualifiers,widths>_PrintfFull {Abs}
+                        0x00000000           --   Gb  xprintffull.o [3]
+__iar_provide$$_Scanf<assign_suppressions,floats,long_longs,multibytes,n_formatters,scansets>_ScanfFull {Abs}
+                        0x00000000           --   Gb  xscanffull.o [3]
+__iar_strcmp            0x00008529          Code  Gb  strcmp.o [5]
+__iar_system_Mtxdst     0x0000e3a5     0x2  Code  Gb  xmtx.o [3]
+__iar_system_Mtxinit    0x0000e3a3     0x2  Code  Gb  xmtx.o [3]
+__iar_system_Mtxlock    0x0000e3a7     0x2  Code  Gb  xmtx.o [3]
+__iar_system_Mtxunlock  0x0000e3a9     0x2  Code  Gb  xmtx.o [3]
+__iar_ui2d              0x0000632d          Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x00007781          Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x00004b33    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00010203     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000          Data  Gb  startup_stm32f10x_cl.o [1]
+_call_main              0x000101f9          Code  Gb  cmain.o [5]
+_exit                   0x0001020d          Code  Gb  cexit.o [5]
+_getMCUADCVol           0x0000766b    0x8a  Code  Gb  OnChipADC.o [1]
+_main                   0x000101ff          Code  Gb  cmain.o [5]
+_readSamDots            0x000075bb    0x2c  Code  Gb  OnChipADC.o [1]
+add_item_to_array       0x000046df    0x52  Code  Lc  cJSON.o [1]
+add_item_to_object      0x0000473b    0x78  Code  Lc  cJSON.o [1]
+bBeepEnabled            0x200001c4     0x1  Data  Gb  Beep.o [1]
+buffer_skip_whitespace  0x00003d19    0x48  Code  Lc  cJSON.o [1]
+cJSON_AddItemToArray    0x00004731     0x8  Code  Gb  cJSON.o [1]
+cJSON_AddItemToObject   0x000047b3    0x10  Code  Gb  cJSON.o [1]
+cJSON_AddNumberToObject
+                        0x000047c9    0x36  Code  Gb  cJSON.o [1]
+cJSON_AddStringToObject
+                        0x000047ff    0x34  Code  Gb  cJSON.o [1]
+cJSON_CreateArray       0x000048d7    0x14  Code  Gb  cJSON.o [1]
+cJSON_CreateIntArray    0x000048ff    0x6c  Code  Gb  cJSON.o [1]
+cJSON_CreateNumber      0x0000483d    0x5e  Code  Gb  cJSON.o [1]
+cJSON_CreateObject      0x000048eb    0x14  Code  Gb  cJSON.o [1]
+cJSON_CreateString      0x000048a1    0x36  Code  Gb  cJSON.o [1]
+cJSON_Delete            0x00003533    0x5a  Code  Gb  cJSON.o [1]
+cJSON_GetArrayItem      0x00004669    0x10  Code  Gb  cJSON.o [1]
+cJSON_GetArraySize      0x0000462f    0x1c  Code  Gb  cJSON.o [1]
+cJSON_GetObjectItem     0x000046cf     0xa  Code  Gb  cJSON.o [1]
+cJSON_New_Item          0x00003515    0x1e  Code  Lc  cJSON.o [1]
+cJSON_Parse             0x00003ea5     0xc  Code  Gb  cJSON.o [1]
+cJSON_ParseWithLengthOpts
+                        0x00003dc7    0xd8  Code  Gb  cJSON.o [1]
+cJSON_ParseWithOpts     0x00003da3    0x24  Code  Gb  cJSON.o [1]
+cJSON_PrintUnformatted  0x00003f6f     0xc  Code  Gb  cJSON.o [1]
+cJSON_free              0x0000496b     0xa  Code  Gb  cJSON.o [1]
+cJSON_strdup            0x000034dd    0x38  Code  Lc  cJSON.o [1]
+case_insensitive_strcmp
+                        0x00003491    0x4c  Code  Lc  cJSON.o [1]
+cast_away_const         0x00004739     0x2  Code  Lc  cJSON.o [1]
+chord_freq              0x0000f064    0x78  Data  Gb  Beep.o [1]
+compare_double          0x00003769    0x70  Code  Lc  cJSON.o [1]
+debug                   0x00006295    0x38  Code  Gb  debug_stm32.o [1]
+delay                   0x0000d1c1    0x1c  Code  Lc  stm32f10x_flash.o [1]
+digits                  0x0000e00c    0x28  Data  Lc  xstoull.o [3]
+div                     0x0000d695     0xe  Code  Gb  div.o [3]
+dmul                    0x0000d999    0x52  Code  Lc  xdtento.o [4]
+ensure                  0x00003679    0xcc  Code  Lc  cJSON.o [1]
+exit                    0x00010207     0x4  Code  Gb  exit.o [3]
+file_mtx                0x20002fe4    0x20  Data  Lc  xsyslock.o [3]
+free                    0x0000d351    0x82  Code  Gb  xxmemxfree.o [3]
+fsChord                 0x00010654     0xc  Data  Gb  Beep.o [1]
+fsModeCfg               0x20003018    0x20  Data  Gb  FsMode.o [1]
+gCPULoadResult          0x20003108     0x1  Data  Gb  Timer4.o [1]
+gCPULoadTimerCounter    0x200030bc     0x4  Data  Gb  HostComm.o [1]
+gFSModeFlag             0x20003106     0x1  Data  Gb  FsMode.o [1]
+gMusicDuration          0x20000148     0x4  Data  Lc  Beep.o [1]
+gMusicIndex             0x2000309c     0x4  Data  Lc  Beep.o [1]
+gMusicLen               0x20003098     0x4  Data  Lc  Beep.o [1]
+gMusicPointer           0x200030a0     0x4  Data  Gb  Beep.o [1]
+gTFCError               0x200030c4     0x4  Data  Lc  TFCError.o [1]
+gTFCEvent               0x200030c8     0x4  Data  Lc  TFCEvent.o [1]
+gTimer3Arr              0x20003104     0x2  Data  Gb  QuadDAC.o [1]
+get_array_item          0x0000464b    0x1e  Code  Lc  cJSON.o [1]
+get_decimal_point       0x0000358d     0x4  Code  Lc  cJSON.o [1]
+get_object_item         0x00004679    0x56  Code  Lc  cJSON.o [1]
+global_error            0x20003088     0x8  Data  Lc  cJSON.o [1]
+global_hooks            0x2000013c     0xc  Data  Lc  cJSON.o [1]
+isalpha                 0x0000ddc9    0x14  Code  Gb  isxxx.o [3]
+isspace                 0x0000dddd    0x14  Code  Gb  isxxx.o [3]
+ledDriverRegRead        0x00004f7b    0xfe  Code  Gb  LedDriver.o [1]
+ledDriverRegWrite       0x00005079   0x11e  Code  Gb  LedDriver.o [1]
+liangzhilaohu           0x0000f3b4    0x48  Data  Gb  Beep.o [1]
+localeconv              0x0000d663    0x16  Code  Gb  localeconv.o [3]
+main                    0x0000e839   0x14e  Code  Gb  main.o [1]
+malloc                  0x0000d279    0xb6  Code  Gb  xxmemxmalloc.o [3]
+memchr                  0x0000d215          Code  Gb  memchr.o [5]
+memcpy                  0x00006c2b     0xe  Code  Gb  cJSON.o [1]
+memset                  0x00009b61    0x14  Code  Gb  cJSON.o [1]
+mtx                     0x20003004    0x14  Data  Lc  xsyslock.o [3]
+ndigs                   0x0000e034    0x28  Data  Lc  xstoull.o [3]
+orKey                   0x000101a4    0x18  Data  Gb  TypeC.o [1]
+parse_array             0x000041c9    0xf6  Code  Lc  cJSON.o [1]
+parse_hex4              0x000038d9    0x52  Code  Lc  cJSON.o [1]
+parse_number            0x00003591    0xe8  Code  Lc  cJSON.o [1]
+parse_object            0x00004373   0x140  Code  Lc  cJSON.o [1]
+parse_string            0x00003a27   0x186  Code  Lc  cJSON.o [1]
+parse_value             0x00003f89   0x138  Code  Lc  cJSON.o [1]
+pows                    0x0000db30    0x48  Data  Lc  xdtento.o [4]
+print                   0x00003eb1    0xbe  Code  Lc  cJSON.o [1]
+print_array             0x000042bf    0xb4  Code  Lc  cJSON.o [1]
+print_number            0x000037d9    0xfc  Code  Lc  cJSON.o [1]
+print_object            0x000044b3   0x17c  Code  Lc  cJSON.o [1]
+print_string            0x00003d0f     0xa  Code  Lc  cJSON.o [1]
+print_string_ptr        0x00003bad   0x162  Code  Lc  cJSON.o [1]
+print_value             0x000040cd    0xea  Code  Lc  cJSON.o [1]
+realloc                 0x0000ec51    0xa4  Code  Gb  realloc.o [3]
+sFLASH_EraseSector      0x0000901d    0x44  Code  Gb  SPIFlash.o [1]
+sFLASH_Init             0x00008fab    0x72  Code  Gb  SPIFlash.o [1]
+sFLASH_LowLevel_Init    0x00008f29    0x82  Code  Gb  SPIFlash.o [1]
+sFLASH_ReadBuffer       0x0000920f    0x52  Code  Gb  SPIFlash.o [1]
+sFLASH_ReadID           0x00009261    0x4a  Code  Gb  SPIFlash.o [1]
+sFLASH_ReadUniqueID     0x000092ab    0x7c  Code  Gb  SPIFlash.o [1]
+sFLASH_SendByte         0x00009327    0x32  Code  Gb  SPIFlash.o [1]
+sFLASH_WaitForWriteEnd  0x00009377    0x2e  Code  Gb  SPIFlash.o [1]
+sFLASH_WriteBuffer      0x000090bb   0x154  Code  Gb  SPIFlash.o [1]
+sFLASH_WriteEnable      0x00009359    0x1e  Code  Gb  SPIFlash.o [1]
+sFLASH_WritePage        0x00009061    0x5a  Code  Gb  SPIFlash.o [1]
+sectorBuffer            0x20001550  0x1000  Data  Gb  FsMode.o [1]
+skip_utf8_bom           0x00003d61    0x42  Code  Lc  cJSON.o [1]
+softResetText           0x0000f2c4    0x54  Data  Gb  main.o [1]
+songbie                 0x0000f318    0x50  Data  Gb  Beep.o [1]
+sprintf                 0x00005ba9    0x34  Code  Gb  sprintf.o [3]
+sscanf                  0x00009ded    0x24  Code  Gb  sscanf.o [3]
+strcat                  0x00005c2b    0x1e  Code  Gb  strcat.o [3]
+strchr                  0x0000d1fd          Code  Gb  strchr.o [5]
+strcmp                  0x00008529          Code  Gb  strcmp.o [5]
+strcpy                  0x00004b55          Code  Gb  strcpy.o [5]
+strlen                  0x00004afd          Code  Gb  strlen.o [5]
+strncmp                 0x00009e11    0x2a  Code  Gb  strncmp.o [3]
+strtod                  0x00009b75     0x6  Code  Gb  strtod.o [4]
+suffix_object           0x000046d9     0x6  Code  Lc  cJSON.o [1]
+sys                     0x20000000    0x74  Data  Gb  MainPanel.o [1]
+syslock_o               0x20002fe0     0x4  Data  Lc  xsyslock.o [3]
+tmr_index               0x200030f8     0x4  Data  Gb  WinTimer.o [1]
+tolower                 0x00009b4d    0x14  Code  Gb  tolower.o [3]
+update_offset           0x00003745    0x24  Code  Lc  cJSON.o [1]
+user                    0x20000074    0x68  Data  Gb  MainPanel.o [1]
+utf16_literal_to_utf8   0x0000392b    0xfc  Code  Lc  cJSON.o [1]
+vsprintf                0x0000b685    0x2c  Code  Gb  vsprintf.o [3]
+xuemaojiao              0x0000efe8    0x7c  Data  Gb  Beep.o [1]
+
+
+[1] = D:\hardware\P\TFC\03.SCH\DAQ-Firmware\V1_0_0\Project\Stm32f105\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  60 586 bytes of readonly  code memory
+   7 807 bytes of readonly  data memory
+  37 127 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,8 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[PanelCallback]
+Class="Function"
+Prototype="int PanelCallback(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>TFC-DAQ/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>220</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1300</ColumnWidth1><ColumnWidth2>346</ColumnWidth2><ColumnWidth3>86</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>619</ColumnWidth0><ColumnWidth1>88</ColumnWidth1><ColumnWidth2>1062</ColumnWidth2></Find-in-Files>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1734</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-25822-9616</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>TFC-DAQ</ExpandedNode><ExpandedNode>TFC-DAQ/Main</ExpandedNode><ExpandedNode>TFC-DAQ/Main/Application</ExpandedNode><ExpandedNode>TFC-DAQ/Main/Application/Communication</ExpandedNode><ExpandedNode>TFC-DAQ/Main/Application/Sensor</ExpandedNode><ExpandedNode>TFC-DAQ/Main/DEBUG</ExpandedNode><ExpandedNode>TFC-DAQ/Main/Driver</ExpandedNode><ExpandedNode>TFC-DAQ/Main/GUI</ExpandedNode><ExpandedNode>TFC-DAQ/Main/GUICore</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-3279-9629</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-31621-21361</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-2595-19220</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\UserTask.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1023</SelStart><SelEnd>1038</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\main.c</Filename><XPos>0</XPos><YPos>182</YPos><SelStart>5275</SelStart><SelEnd>5290</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Application\FsMode.c</Filename><XPos>0</XPos><YPos>75</YPos><SelStart>1487</SelStart><SelEnd>1487</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\GUI\HostComm.c</Filename><XPos>0</XPos><YPos>69</YPos><SelStart>1399</SelStart><SelEnd>1399</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Application\FsMode.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>393</SelStart><SelEnd>393</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Application\TFCThumb.c</Filename><XPos>0</XPos><YPos>1047</YPos><SelStart>31711</SelStart><SelEnd>31711</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Driver\WinTimer.c</Filename><XPos>0</XPos><YPos>127</YPos><SelStart>4091</SelStart><SelEnd>4091</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\DEBUG\debug_stm32.c</Filename><XPos>0</XPos><YPos>477</YPos><SelStart>8426</SelStart><SelEnd>8440</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Application\Sensor\UartSwitch.c</Filename><XPos>0</XPos><YPos>93</YPos><SelStart>2848</SelStart><SelEnd>2848</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Driver\LedDriver.c</Filename><XPos>0</XPos><YPos>559</YPos><SelStart>15870</SelStart><SelEnd>15870</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Driver\LedDriver.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>689</SelStart><SelEnd>689</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Driver\GPIO.c</Filename><XPos>0</XPos><YPos>174</YPos><SelStart>8401</SelStart><SelEnd>8401</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Source\Driver\QuadDAC.C</Filename><XPos>0</XPos><YPos>460</YPos><SelStart>14191</SelStart><SelEnd>14191</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\Libraries\CMSIS\Core\CM3\system_stm32f10x.c</Filename><XPos>0</XPos><YPos>852</YPos><SelStart>28365</SelStart><SelEnd>28365</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-049e4b70><key>iaridepm.enu1</key></Toolbar-049e4b70></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>840</Bottom><Right>294</Right><x>-2</x><y>-2</y><xscreen>55</xscreen><yscreen>57</yscreen><sizeHorzCX>26855</sizeHorzCX><sizeHorzCY>51398</sizeHorzCY><sizeVertCX>144531</sizeVertCX><sizeVertCY>759243</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>224</Bottom><Right>2050</Right><x>-2</x><y>-2</y><xscreen>2052</xscreen><yscreen>226</yscreen><sizeHorzCX>1001953</sizeHorzCX><sizeHorzCY>203787</sizeHorzCY><sizeVertCX>26855</sizeVertCX><sizeVertCY>51398</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

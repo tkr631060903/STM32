@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "bsp_key.h": "c",
+        "bsp_led.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "stm32f10x.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

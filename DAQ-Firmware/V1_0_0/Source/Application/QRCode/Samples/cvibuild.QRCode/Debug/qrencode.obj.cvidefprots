@@ -1,0 +1,4 @@
+[qrencode]
+Class="Function"
+Prototype="void qrencode();"
+
