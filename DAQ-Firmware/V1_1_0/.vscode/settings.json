@@ -5,5 +5,7 @@
         "gpio.h": "c",
         "QuadDAC.C": "cpp",
         "datatype.h": "c"
-    }
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true
 }

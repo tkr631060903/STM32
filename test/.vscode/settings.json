@@ -1,0 +1,17 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "C_Cpp.default.compilerPath": "C:\\software\\msys64\\mingw64\\bin\\cpp.exe",
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error",
+        "clang-diagnostic-pointer-to-int-cast",
+        "clang-diagnostic-error",
+        "clang-diagnostic-error"
+    ]
+}

@@ -276,15 +276,15 @@
         {
             "name": "ADC-DMA",
             "includePath": [
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\Libraries\\CMSIS",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\User",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\Libraries\\FWlib\\inc",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\User\\usart",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\User\\adc",
-                "C:\\Software\\Keil_v5\\ARM\\ARMCC\\include",
-                "C:\\Software\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\Libraries\\CMSIS\\startup",
-                "d:\\Data\\Project\\STM32\\Keil\\ADC-DMA\\Libraries\\FWlib\\src"
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\Libraries\\CMSIS",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\User",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\Libraries\\FWlib\\inc",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\User\\usart",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\User\\adc",
+                "C:\\software\\Keil_v5\\ARM\\ARMCC\\include",
+                "C:\\software\\Keil_v5\\ARM\\ARMCC\\include\\rw",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\Libraries\\CMSIS\\startup",
+                "d:\\Workspace\\STM32\\Keil\\ADC-DMA\\Libraries\\FWlib\\src"
             ],
             "defines": [
                 "STM32F10X_HD",

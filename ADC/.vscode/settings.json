@@ -2,5 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "usart.h": "c"
-    }
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true
 }
