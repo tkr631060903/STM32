@@ -64,6 +64,7 @@ void NMI_Handler(void)
  */
 void HardFault_Handler(void)
 {
+    DEBUG_INFO("HardFault_Handler");
     /* Go to infinite loop when Hard Fault exception occurs */
     while (1) {
     }
