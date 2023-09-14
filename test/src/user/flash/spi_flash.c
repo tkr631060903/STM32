@@ -10,6 +10,7 @@ void SPI_FLASH_Init(void)
     FLASH_SPI_SCK_APBxClock_FUN(FLASH_SPI_SCK_CLK, ENABLE);
     FLASH_SPI_MISO_APBxClock_FUN(FLASH_SPI_MISO_CLK, ENABLE);
     FLASH_SPI_MOSI_APBxClock_FUN(FLASH_SPI_MOSI_CLK, ENABLE);
+    // FLASH_SPI_CS_APBxClock_FUN(FLASH_SPI_CS_CLK | FLASH_SPI_SCK_CLK | FLASH_SPI_MISO_PIN | FLASH_SPI_MOSI_PIN, ENABLE);
     /* 配置SPI的 CS引脚，普通IO即可 */
     GPIO_InitStructure.GPIO_Pin   = FLASH_SPI_CS_PIN;
     GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
@@ -85,9 +86,11 @@ void SPI_FLASH_BufferRead(uint8_t *pBuffer, uint32_t ReadAddr, uint16_t NumByteT
     SPI_FLASH_CS_LOW();
     // 发送读命令
     SPI_FLASH_SendByte(W25X_ReadData);
-    // 发送读地址
-    SPI_FLASH_SendByte((ReadAddr >> 16) & 0xFF0000);
-    SPI_FLASH_SendByte((ReadAddr >> 8) & 0xFF00);
+    /* 发送 读 地址高位 */
+    SPI_FLASH_SendByte((ReadAddr & 0xFF0000) >> 16);
+    /* 发送 读 地址中位 */
+    SPI_FLASH_SendByte((ReadAddr & 0xFF00) >> 8);
+    /* 发送 读 地址低位 */
     SPI_FLASH_SendByte(ReadAddr & 0xFF);
     // 读数据
     while (NumByteToRead--) {

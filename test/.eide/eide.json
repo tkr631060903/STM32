@@ -35,9 +35,9 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x20000000",
-                "size": "0x2800"
+                "size": "0x00010000"
               },
-              "isChecked": "1",
+              "isChecked": true,
               "noInit": false
             }
           ],
@@ -47,9 +47,9 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x08000000",
-                "size": "0x10000"
+                "size": "0x00080000"
               },
-              "isChecked": "1",
+              "isChecked": true,
               "isStartup": true
             }
           ]

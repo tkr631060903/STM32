@@ -122,8 +122,8 @@ void SPI_FLASH(void)
     SPI_FLASH_SectorErase(SectorAddr);
     // SPI_FLASH_ChipErase();
     uint32_t FLASH_ReadAddress = 0x00000;
-    uint16_t BufferSize        = 16;
-    uint8_t Rx_Buffer[16];
+    uint16_t BufferSize        = 64;
+    uint8_t Rx_Buffer[64];
 
     SPI_FLASH_BufferRead(Rx_Buffer, FLASH_ReadAddress, BufferSize);
     for (uint8_t i = 0; i < BufferSize; i++) {
@@ -131,22 +131,26 @@ void SPI_FLASH(void)
     }
 
     uint32_t FLASH_WriteAddress = 0x00000;
-    uint8_t Tx_Buffer[16];
+    uint8_t Tx_Buffer[64];
     for (uint8_t i = 0; i < BufferSize; i++) {
         Tx_Buffer[i] = i;
     }
     DEBUG_DEBUG("\n\rSPI_FLASH_PageWrite\n\r");
-    SPI_FLASH_PageWrite(Tx_Buffer, FLASH_WriteAddress, BufferSize);
-    // SPI_FLASH_BufferWrite(Tx_Buffer, FLASH_WriteAddress, BufferSize);
+    // SPI_FLASH_PageWrite(Tx_Buffer, FLASH_WriteAddress, BufferSize);
+    SPI_FLASH_BufferWrite(Tx_Buffer, FLASH_WriteAddress, BufferSize);
     SPI_FLASH_BufferRead(Rx_Buffer, FLASH_ReadAddress, BufferSize);
     for (uint8_t i = 0; i < BufferSize; i++) {
         DEBUG_DEBUG("0x%02X ", Rx_Buffer[i]);
     }
 }
 
-FATFS fs;             /* FatFs文件系统对象 */
-FRESULT res_flash;    /* 文件操作结果 */
-BYTE work[FF_MAX_SS]; /* Work area (larger is better for processing time) */
+FATFS fs;                                           /* FatFs文件系统对象 */
+FRESULT res_flash;                                  /* 文件操作结果 */
+BYTE work[FF_MAX_SS];                               /* Work area (larger is better for processing time) */
+FIL fnew;                                           /* 文件对象 */
+UINT fnum;                                          /* 文件成功读写数量 */
+BYTE ReadBuffer[1024] = {0};                        /* 读缓冲区 */
+BYTE WriteBuffer[]    = "新建文件系统测试文件\r\n"; /* 写缓冲区*/
 void FatFs(void)
 {
     res_flash = f_mount(&fs, "1:", 1);
@@ -158,8 +162,10 @@ void FatFs(void)
             printf("》FLASH已成功格式化文件系统。\r\n");
             /* 格式化后，先取消挂载 */
             res_flash = f_mount(NULL, "1:", 1);
+            printf("》取消挂载成功。%d\r\n", res_flash);
             /* 重新挂载 */
             res_flash = f_mount(&fs, "1:", 1);
+            printf("》重新挂载成功。%d\r\n", res_flash);
         } else {
             LED_R();
             printf("《《格式化失败。》》\r\n");
@@ -167,18 +173,64 @@ void FatFs(void)
         }
     } else if (res_flash != FR_OK) {
         printf("！！外部Flash挂载文件系统失败。(%d)\r\n", res_flash);
-        printf("！！可能原因：SPI Flash初始化不成功。\r\n");
         while (1) {}
     } else {
         printf("》文件系统挂载成功，可以进行读写测试\r\n");
     }
-}
+    /* 打开文件，每次都以新的形式打开，属性为可写 */
+    printf("\r\n****** 即将进行文件写入测试... ******\r\n");
+    res_flash = f_open(&fnew, "1:hello.txt", FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
+    if (res_flash == FR_OK) {
+        printf("》打开文件成功。%d\r\n", res_flash);
+        res_flash = f_write(&fnew, WriteBuffer, sizeof(WriteBuffer), &fnum);
+        if (res_flash == FR_OK) {
+            printf("》文件写入成功,写入字节数据:%d\r\n", fnum);
+            printf("》写入完戯后的文件数据为：%s \r\n", WriteBuffer);
+        } else {
+            printf("！！文件写入失败：(%d)\n", res_flash);
+            return;
+        }
+        /* 不再读写，关闭文件 */
+        f_close(&fnew);
+    } else {
+        printf("》打开文件失败。错误代码:%d\r\n", res_flash);
+        return;
+    }
+    printf("\r\n****** 即将进行文件读取测试... ******\r\n");
+    res_flash = f_open(&fnew, "1:hello.txt", FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
+    if (res_flash == FR_OK) {
+        printf("》打开文件成功。%d\r\n", res_flash);
+        res_flash = f_read(&fnew, ReadBuffer, sizeof(ReadBuffer), &fnum);
+        if (res_flash == FR_OK) {
+            printf("》文件读取成功,读到字节数据：%d\r\n", fnum);
+            printf("》读取得的文件数据为：%s \r\n", ReadBuffer);
+        } else {
+            printf("！！文件读取失败：(%d)\n", res_flash);
+            return;
+        }
+    } else {
+        printf("》打开文件失败。错误代码:%d\r\n", res_flash);
+        return;
+    }
+    /* 不再读写，关闭文件 */
+    f_close(&fnew);
+    // printf("\r\n****** 即将进行文件内容新增测试... ******\r\n");
+    // res_flash = f_open(&fnew, "1:hello.txt", FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
+    // if (res_flash == FR_OK) {
+    //     printf("》打开文件成功。%d\r\n", res_flash);
+    //     res_flash = f_lseek(&fnew, f_size(&fnew));
+    //     printf("f_lseek(%d), %d\n", res_flash, f_size(&fnew));
+    //     res_flash = f_write(&fnew, WriteBuffer, sizeof(WriteBuffer), &fnum);
+    //     printf("f_write(%d)\n", res_flash);
+    //     res_flash = f_read(&fnew, ReadBuffer, sizeof(ReadBuffer), &fnum);
+    //     printf("》读取得的文件数据为：%s \r\n", ReadBuffer);
+    // } else {
+    //     printf("》打开文件失败。错误代码:%d\r\n", res_flash);
+    //     return;
+    // }
 
-// 软件复位函数
-void System_Reset(void)
-{
-    __set_FAULTMASK(1); // 关闭所有中断
-    NVIC_SystemReset(); // 进行软件复位
+    /* 不再使用文件系统，取消挂载文件系统 */
+    f_mount(NULL, "1:", 1);
 }
 
 void delay(int x)
