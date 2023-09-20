@@ -9,6 +9,8 @@
 #include "stm32f10x_i2c.h"
 #include "stm32f10x_spi.h"
 
+#include "ff.h"
+
 #include "exit.h"
 #include "led.h"
 #include "systick.h"
@@ -16,7 +18,6 @@
 #include "dma.h"
 #include "i2c_ee.h"
 #include "util.h"
-// #include "diskio.h"
-#include "ff.h"
+#include "adc.h"
 
 #endif
