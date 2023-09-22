@@ -17,7 +17,7 @@
 #include "usart.h"
 #include "dma.h"
 #include "i2c_ee.h"
-#include "util.h"
 #include "adc.h"
+#include "TIMbase.h"
 
 #endif

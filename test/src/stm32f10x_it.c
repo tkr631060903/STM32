@@ -23,11 +23,12 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "includes.h"
 #include "led.h"
 #include "exit.h"
 #include "systick.h"
 #include "usart.h"
-#include "includes.h"
+#include "TIMbase.h"
 
 /** @addtogroup STM32F10x_StdPeriph_Examples
  * @{
@@ -64,7 +65,7 @@ void NMI_Handler(void)
  */
 void HardFault_Handler(void)
 {
-    DEBUG_INFO("HardFault_Handler_ERROR");
+    DEBUG_INFO("HardFault_Handler_ERROR\n\r");
     /* Go to infinite loop when Hard Fault exception occurs */
     while (1) {
     }
@@ -176,11 +177,11 @@ void DEBUG_USART_IRQHandler(void)
             LED_R();
             Usart_SendString(DEBUG_USARTx, "lightRed");
             Usart_SendString(DEBUG_USARTx, "\n\r");
-        }else if (strcmp(data, "green") == 0) {
+        } else if (strcmp(data, "green") == 0) {
             LED_G();
             Usart_SendString(DEBUG_USARTx, "lightGreen");
             Usart_SendString(DEBUG_USARTx, "\n\r");
-        }else if (strcmp(data, "blue") == 0) {
+        } else if (strcmp(data, "blue") == 0) {
             LED_B();
             Usart_SendString(DEBUG_USARTx, "lightBule");
             Usart_SendString(DEBUG_USARTx, "\n\r");
@@ -189,6 +190,15 @@ void DEBUG_USART_IRQHandler(void)
     } else {
         strcat(data, &temp);
         Usart_SendHalfWord(DEBUG_USARTx, temp);
+    }
+}
+
+extern volatile uint32_t time;
+void BASIC_TIM_IRQHandler(void)
+{
+    if (TIM_GetITStatus(BASIC_TIM, TIM_IT_Update) != RESET) {
+        time++;
+        TIM_ClearITPendingBit(BASIC_TIM, TIM_FLAG_Update);
     }
 }
 /******************************************************************************/

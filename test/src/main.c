@@ -12,7 +12,6 @@
 #include "stm32f10x.h"
 #include "includes.h"
 #include "ff.h"
-#include "util.h"
 #include "led.h"
 #include "exit.h"
 #include "systick.h"
@@ -20,17 +19,19 @@
 #include "i2c_ee.h"
 #include "spi_flash.h"
 #include "adc.h"
+#include "TIMbase.h"
 
+void delay(int x);
+void System_Reset(void);
 void DMA(void);
 void USART(void);
 void GPIO_INPUT(void);
 void GPIO_OUT(void);
-void System_Reset(void);
-void delay(int x);
 void I2C_EE(void);
 void SPI_FLASH(void);
 void FatFs(void);
 void ADC(void);
+void TIM_base(void);
 
 int main()
 {
@@ -38,13 +39,22 @@ int main()
     LED_Init();
     EXIT_config();
     USART_Config();
-    DEBUG_INFO("adc_test\n\r");
+    DEBUG_INFO("TIM_test\n\r");
     // DMA();
     // I2C_EE();
     // SPI_FLASH();
     // FatFs();
-    ADC();
+    // ADC();
+    TIM_base();
     while (1) {
+    }
+}
+
+void delay(int x)
+{
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < 1000; j++)
+            __NOP();
     }
 }
 
@@ -291,10 +301,15 @@ void ADC(void)
     }
 }
 
-void delay(int x)
+volatile uint32_t time = 0;
+void TIM_base(void)
 {
-    for (int i = 0; i < x; i++) {
-        for (int j = 0; j < 1000; j++)
-            __NOP();
+    BASIC_TIM_Init();
+    while (1) {
+        if (time == 1000) {
+            /* 1000 * 1 ms = 1s 时间到 */
+            time = 0;
+            printf("1s 时间到\r\n");
+        }
     }
 }

@@ -21,7 +21,11 @@
   },
   "targets": {
     "Debug": {
-      "excludeList": [],
+      "excludeList": [
+        "src/user/TIM",
+        "src/user/util",
+        "src/startup_stm32f10x_md.s"
+      ],
       "toolchain": "AC5",
       "compileConfig": {
         "cpuType": "Cortex-M3",

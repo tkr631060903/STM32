@@ -1,0 +1,159 @@
+{
+  "name": "RTOS",
+  "type": "ARM",
+  "dependenceList": [
+    {
+      "groupName": "STM32F1xx_DFP",
+      "depList": [
+        {
+          "name": "StdPeriphDrivers.Framework",
+          "incList": [
+            "pack/Keil/STM32F1xx_DFP.2.3.0/Device/StdPeriph_Driver/inc",
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.Framework"
+          ],
+          "sourceDirList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.Framework"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "StdPeriphDrivers.GPIO",
+          "incList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.GPIO"
+          ],
+          "sourceDirList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.GPIO"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "StdPeriphDrivers.RCC",
+          "incList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.RCC"
+          ],
+          "sourceDirList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.RCC"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "StdPeriphDrivers.USART",
+          "incList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.USART"
+          ],
+          "sourceDirList": [
+            ".eide/deps/STM32F1xx_DFP/StdPeriphDrivers.USART"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "Startup",
+          "incList": [
+            "pack/Keil/STM32F1xx_DFP.2.3.0/Device/Include",
+            ".eide/deps/STM32F1xx_DFP/Startup"
+          ],
+          "sourceDirList": [
+            ".eide/deps/STM32F1xx_DFP/Startup"
+          ],
+          "libList": [],
+          "defineList": []
+        }
+      ]
+    }
+  ],
+  "srcDirs": [
+    ".eide/deps",
+    "src",
+    "Libraries"
+  ],
+  "outDir": "build",
+  "packDir": ".\\pack\\Keil\\STM32F1xx_DFP.2.3.0",
+  "deviceName": "STM32F103C8",
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "miscInfo": {
+    "uid": "e1da9e8efaeda1c6a6a95372be65ee3b"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        ".eide/deps/STM32F1xx_DFP/Startup/STM32F1xx_OPT.s"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x00010000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x00080000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32f1x",
+        "interface": "cmsis-dap-v1",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": ".\\build\\Debug\\stm32f103_FreeRTOS_quickstart.hex",
+          "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F103C8"
+          },
+          "proType": 1,
+          "speed": 5000,
+          "baseAddr": "0x08000000",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "STM32F10X_MD",
+          "USE_STDPERIPH_DRIVER",
+          "USE_FULL_ASSERT"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
