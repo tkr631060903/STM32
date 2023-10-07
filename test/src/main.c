@@ -45,7 +45,7 @@ int main()
     // SPI_FLASH();
     // FatFs();
     // ADC();
-    TIM_base();
+    // TIM_base();
     while (1) {
     }
 }
