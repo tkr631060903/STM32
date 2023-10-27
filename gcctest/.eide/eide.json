@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "gcctest",
   "type": "ARM",
   "dependenceList": [],
   "srcDirs": [
@@ -8,11 +8,11 @@
     "hal"
   ],
   "outDir": "build",
-  "deviceName": "STM32F103VE",
-  "packDir": ".pack/Keil/STM32F1xx_DFP.2.3.0",
+  "deviceName": "STM32F102C8",
+  "packDir": null,
   "miscInfo": {
-    "lastBuildTime": 1608618345249,
-    "uid": "86789c972c50e37af42aad9facff6863"
+    "lastBuildTime": 1608695075742,
+    "uid": "7de672ca4ac14eb39e6ec9dc87d9e598"
   },
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -22,17 +22,28 @@
   "targets": {
     "Debug": {
       "excludeList": [
-        "src/user/TIM",
-        "src/user/util",
-        "src/startup_stm32f10x_md.s",
-        "src/user/sdio/bsp_sdio_sdcard..c"
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c"
       ],
-      "toolchain": "AC5",
+      "toolchain": "GCC",
       "compileConfig": {
         "cpuType": "Cortex-M3",
-        "floatingPointHardware": "none",
-        "useCustomScatterFile": false,
-        "scatterFilePath": "undefined",
+        "floatingPointHardware": "default",
+        "useCustomScatterFile": true,
+        "scatterFilePath": ".\\stm32f1x_64KB_flash.ld",
         "storageLayout": {
           "RAM": [
             {
@@ -40,9 +51,9 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x20000000",
-                "size": "0x00010000"
+                "size": "0x2800"
               },
-              "isChecked": true,
+              "isChecked": "1",
               "noInit": false
             }
           ],
@@ -52,9 +63,9 @@
               "id": 1,
               "mem": {
                 "startAddr": "0x08000000",
-                "size": "0x00080000"
+                "size": "0x10000"
               },
-              "isChecked": true,
+              "isChecked": "1",
               "isStartup": true
             }
           ]
@@ -79,35 +90,6 @@
           "proType": 1,
           "speed": 8000,
           "otherCmds": ""
-        },
-        "OpenOCD": {
-          "bin": "",
-          "target": "stm32f1x",
-          "interface": "cmsis-dap",
-          "baseAddr": "0x08000000"
-        },
-        "pyOCD": {
-          "bin": "",
-          "targetName": "cortex_m",
-          "baseAddr": "0x08000000",
-          "speed": "4M",
-          "config": ".eide/debug.pyocd.yaml"
-        },
-        "Custom": {
-          "bin": "",
-          "commandLine": "",
-          "eraseChipCommand": ""
-        },
-        "STLink": {
-          "bin": "",
-          "proType": "SWD",
-          "resetMode": "default",
-          "runAfterProgram": true,
-          "speed": 4000,
-          "address": "0x08000000",
-          "elFile": "None",
-          "optionBytes": ".eide/debug.st.option.bytes.ini",
-          "otherCmds": ""
         }
       },
       "custom_dep": {
@@ -120,7 +102,7 @@
         "sourceDirList": [],
         "defineList": [
           "USE_STDPERIPH_DRIVER",
-          "STM32F10X_HD"
+          "STM32F10X_MD"
         ]
       }
     }

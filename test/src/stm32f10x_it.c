@@ -201,6 +201,12 @@ void BASIC_TIM_IRQHandler(void)
         TIM_ClearITPendingBit(BASIC_TIM, TIM_FLAG_Update);
     }
 }
+
+void SDIO_IRQHandler(void) 
+{
+  /* Process All SDIO Interrupt Sources */
+  SD_ProcessIRQSrc();
+}
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

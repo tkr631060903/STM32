@@ -8,6 +8,7 @@
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_i2c.h"
 #include "stm32f10x_spi.h"
+#include "stm32f10x_sdio.h"
 
 #include "ff.h"
 
@@ -19,5 +20,6 @@
 #include "i2c_ee.h"
 #include "adc.h"
 #include "TIMbase.h"
+#include "sdio_sdcard.h"
 
 #endif

@@ -20,6 +20,8 @@
 #include "spi_flash.h"
 #include "adc.h"
 #include "TIMbase.h"
+#include "sdio_sdcard.h"
+#include "SD_test.h"
 
 void delay(int x);
 void System_Reset(void);
@@ -32,6 +34,7 @@ void SPI_FLASH(void);
 void FatFs(void);
 void ADC(void);
 void TIM_base(void);
+void SDIO_SDCARD(void);
 
 int main()
 {
@@ -39,13 +42,14 @@ int main()
     LED_Init();
     EXIT_config();
     USART_Config();
-    DEBUG_INFO("TIM_test\n\r");
+    DEBUG_INFO("SDIO_test\n\r");
     // DMA();
     // I2C_EE();
     // SPI_FLASH();
-    // FatFs();
+    FatFs();
     // ADC();
     // TIM_base();
+    // SDIO_SDCARD();
     while (1) {
     }
 }
@@ -165,6 +169,8 @@ BYTE ReadBuffer[1024] = {0};                /* 读缓冲区 */
 BYTE WriteBuffer[]    = "进行文件写入测试"; /* 写缓冲区*/
 void FatFs(void)
 {
+    // SPI_FLASH_Init();
+    // SPI_FLASH_ChipErase();
     res = f_mount(&fs, "1:", 1);
     if (res == FR_NO_FILESYSTEM) {
         printf("》FLASH还没有文件系统，即将进行格式化...\r\n");
@@ -191,7 +197,8 @@ void FatFs(void)
     }
     /* 打开文件，每次都以新的形式打开，属性为可写 */
     printf("\r\n****** 即将进行文件写入测试... ******\r\n");
-    res = f_open(&file, "1:hello.txt", FA_OPEN_ALWAYS | FA_WRITE | FA_READ);
+    res = f_open(&file, "1:hello.txt", FA_OPEN_ALWAYS | FA_WRITE);
+    // res = f_open(&file, "1:hello.txt", FA_CREATE_ALWAYS | FA_WRITE );
     if (res == FR_OK) {
         printf("》打开文件成功。%d\r\n", res);
         res = f_write(&file, WriteBuffer, sizeof(WriteBuffer), &fnum);
@@ -312,4 +319,9 @@ void TIM_base(void)
             printf("1s 时间到\r\n");
         }
     }
+}
+
+void SDIO_SDCARD(void)
+{
+    SD_Test();
 }
