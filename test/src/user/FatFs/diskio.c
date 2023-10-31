@@ -11,10 +11,13 @@
 #include "diskio.h" /* Declarations of disk functions */
 #include "includes.h"
 #include "spi_flash.h"
+#include "sdio_sdcard.h"
 
 /* Definitions of physical drive number for each drive */
-#define ATA       0 // 预留SD卡
-#define SPI_FLASH 1 // 外部SPI FLASH
+#define ATA          0 // 预留SD卡
+#define SPI_FLASH    1 // 外部SPI FLASH
+
+#define SD_BLOCKSIZE 512
 
 /*-----------------------------------------------------------------------*/
 /* Get Drive Status                                                      */
@@ -24,9 +27,10 @@ DSTATUS disk_status(
     BYTE pdrv /* Physical drive nmuber to identify the drive */
 )
 {
-    DSTATUS stat;
+    DSTATUS stat = STA_NOINIT;
     switch (pdrv) {
         case ATA: // SD卡
+            stat &= ~STA_NOINIT;
             return stat;
         case SPI_FLASH:
             /* SPI Flash状态检测：读取SPI Flash 设备ID */
@@ -50,9 +54,15 @@ DSTATUS disk_initialize(
     BYTE pdrv /* Physical drive nmuber to identify the drive */
 )
 {
-    DSTATUS stat;
+    DSTATUS stat = STA_NOINIT;
     switch (pdrv) {
         case ATA:
+            if (SD_Init() == SD_OK) {
+                // disk_status(ATA);
+                stat &= ~STA_NOINIT;
+            } else {
+                stat = STA_NOINIT;
+            }
             return stat;
         case SPI_FLASH:
             /* 初始化SPI Flash */
@@ -80,8 +90,33 @@ DRESULT disk_read(
 )
 {
     DRESULT res;
+    SD_Error SD_state = SD_OK;
     switch (pdrv) {
         case ATA:
+            if ((DWORD)buff & 3) {
+                DRESULT res = RES_OK;
+                DWORD scratch[SD_BLOCKSIZE / 4];
+                while (count--) {
+                    res = disk_read(ATA, (void *)scratch, sector++, 1);
+                    if (res != RES_OK) {
+                        break;
+                    }
+                    memcpy(buff, scratch, SD_BLOCKSIZE);
+                    buff += SD_BLOCKSIZE;
+                }
+                return res;
+            }
+            SD_state = SD_ReadMultiBlocks(buff, sector * SD_BLOCKSIZE, SD_BLOCKSIZE, count);
+            if (SD_state == SD_OK) {
+                /* Check if the Transfer is finished */
+                SD_state = SD_WaitReadOperation();
+                while (SD_GetStatus() != SD_TRANSFER_OK)
+                    ;
+            }
+            if (SD_state != SD_OK)
+                res = RES_PARERR;
+            else
+                res = RES_OK;   
             return res;
         case SPI_FLASH:
             /* 扇区偏移2MB，外部Flash文件系统空间放在SPI Flash后面6MB空间 */
@@ -107,8 +142,34 @@ DRESULT disk_write(
 {
     DRESULT res;
     uint32_t write_addr;
+    SD_Error SD_state = SD_OK;
     switch (pdrv) {
         case ATA:
+            if ((DWORD)buff & 3) {
+                DRESULT res = RES_OK;
+                DWORD scratch[SD_BLOCKSIZE / 4];
+                while (count--) {
+                    memcpy(scratch, buff, SD_BLOCKSIZE);
+                    res = disk_write(ATA, (void *)scratch, sector++, 1);
+                    if (res != RES_OK) {
+                        break;
+                    }
+                    buff += SD_BLOCKSIZE;
+                }
+                return res;
+            }
+            SD_state = SD_WriteMultiBlocks((uint8_t *)buff, (uint64_t)sector * SD_BLOCKSIZE, SD_BLOCKSIZE, count);
+            if (SD_state == SD_OK) {
+                /* Check if the Transfer is finished */
+                SD_state = SD_WaitWriteOperation();
+                /* Wait until end of DMA transfer */
+                while (SD_GetStatus() != SD_TRANSFER_OK)
+                    ;
+            }
+            if (SD_state != SD_OK)
+                res = RES_PARERR;
+            else
+                res = RES_OK;
             return res;
         case SPI_FLASH:
             /* 扇区偏移2MB，外部Flash文件系统空间放在SPI Flash后面6MB空间 */
@@ -126,6 +187,7 @@ DRESULT disk_write(
 /*-----------------------------------------------------------------------*/
 /* Miscellaneous Functions                                               */
 /*-----------------------------------------------------------------------*/
+extern SD_CardInfo SDCardInfo;
 
 DRESULT disk_ioctl(
     BYTE pdrv, /* Physical drive nmuber (0..) */
@@ -136,6 +198,23 @@ DRESULT disk_ioctl(
     DRESULT res;
     switch (pdrv) {
         case ATA:
+            switch (cmd) {
+                // Get R/W sector size (WORD)
+                case GET_SECTOR_SIZE:
+                    *(WORD *)buff = SD_BLOCKSIZE;
+                    break;
+                // Get erase block size in unit of sector (DWORD)
+                case GET_BLOCK_SIZE:
+                    *(DWORD *)buff = 1;
+                    break;
+
+                case GET_SECTOR_COUNT:
+                    *(DWORD *)buff = SDCardInfo.CardCapacity / SDCardInfo.CardBlockSize;
+                    break;
+                case CTRL_SYNC:
+                    break;
+            }
+            res = RES_OK;
             return res;
         case SPI_FLASH:
             switch (cmd) {
