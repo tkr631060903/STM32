@@ -22,6 +22,7 @@
 #include "TIMbase.h"
 #include "sdio_sdcard.h"
 #include "SD_test.h"
+#include "can.h"
 
 void delay(int x);
 void System_Reset(void);
@@ -51,7 +52,7 @@ int main()
     // ADC();
     // TIM_base();
     // SDIO_SDCARD();
-    SDIO_SDCARD_FatFs();
+    // SDIO_SDCARD_FatFs();
     CAN();
     while (1) {
     }
@@ -167,12 +168,12 @@ void SPI_FLASH(void)
     }
 }
 
-FATFS fs;                                   /* FatFs文件系统对象 */
-FRESULT res;                                /* 文件操作结果 */
-BYTE work[FF_MAX_SS];                       /* Work area (larger is better for processing time) */
-FIL file;                                   /* 文件对象 */
-UINT fnum;                                  /* 文件成功读写数量 */
-BYTE ReadBuffer[1024] = {0};                /* 读缓冲区 */
+FATFS fs;                                             /* FatFs文件系统对象 */
+FRESULT res;                                          /* 文件操作结果 */
+BYTE work[FF_MAX_SS];                                 /* Work area (larger is better for processing time) */
+FIL file;                                             /* 文件对象 */
+UINT fnum;                                            /* 文件成功读写数量 */
+BYTE ReadBuffer[1024] = {0};                          /* 读缓冲区 */
 BYTE WriteBuffer[]    = "我是写入数据,我是写入数据."; /* 写缓冲区*/
 void SPI_FLASH_FatFs(void)
 {
@@ -409,7 +410,31 @@ void SDIO_SDCARD_FatFs(void)
     f_mount(NULL, "0:", 1);
 }
 
+// RAM空间不够且没有使用CAN,可注释CAN相关代码
+CanRxMsg CAN_Rece_Data;
+CanTxMsg CAN_Tran_Data;
+uint8_t flag = 0;
 void CAN(void)
 {
+    DEBUG_INFO("CAN_Test\n\r");
+    CAN_Config();
+    while (1) {
+        uint8_t box;
+        CAN_Tran_Data.StdId   = 0;
+        CAN_Tran_Data.ExtId   = PASS_ID;
+        CAN_Tran_Data.RTR     = CAN_RTR_Data;
+        CAN_Tran_Data.IDE     = CAN_Id_Extended;
+        CAN_Tran_Data.DLC     = 1;
+        CAN_Tran_Data.Data[0] = 10;
 
+        box = CAN_Transmit(CAN1, &CAN_Tran_Data);
+        while (CAN_TransmitStatus(CAN1, box) == CAN_TxStatus_Failed)
+            ;
+        printf("\r\n数据发送完成\r\n");
+        if (flag == 1) {
+            printf("\r\n接收到的数据为:%d\r\n", CAN_Rece_Data.Data[0]);
+            flag = 0;
+        }
+        SysTick_Delay_ms(1000);
+    }
 }

@@ -202,10 +202,18 @@ void BASIC_TIM_IRQHandler(void)
     }
 }
 
-void SDIO_IRQHandler(void) 
+void SDIO_IRQHandler(void)
 {
-  /* Process All SDIO Interrupt Sources */
-  SD_ProcessIRQSrc();
+    /* Process All SDIO Interrupt Sources */
+    SD_ProcessIRQSrc();
+}
+
+extern CanRxMsg CAN_Rece_Data;
+extern uint8_t flag;
+void USB_LP_CAN1_RX0_IRQHandler(void)
+{
+    CAN_Receive(CAN1, CAN_FIFO0, &CAN_Rece_Data);
+    flag = 1;
 }
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
