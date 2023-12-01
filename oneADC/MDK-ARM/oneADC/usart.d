@@ -8,14 +8,14 @@ oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 oneadc\usart.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 oneadc\usart.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 oneadc\usart.o: ../Drivers/CMSIS/Include/core_cm3.h
-oneadc\usart.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+oneadc\usart.o: C:\software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 oneadc\usart.o: ../Drivers/CMSIS/Include/cmsis_version.h
 oneadc\usart.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 oneadc\usart.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 oneadc\usart.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-oneadc\usart.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+oneadc\usart.o: C:\software\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -29,4 +29,4 @@ oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 oneadc\usart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-oneadc\usart.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+oneadc\usart.o: C:\software\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

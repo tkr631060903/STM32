@@ -1,0 +1,12 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "aiXcoder.showTrayIcon": true
+    },
+    "extensions": {}
+}

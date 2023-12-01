@@ -28,7 +28,7 @@
             "editor.autoIndent": "advanced"
         },
         "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "aiXcoder.showTrayIcon": true,
+        "aiXcoder.showTrayIcon": false,
         "commentTranslate.hover.enabled": true,
         "commentTranslate.source": "Bing",
         "EIDE.Cpptools.ForceInclude": [],

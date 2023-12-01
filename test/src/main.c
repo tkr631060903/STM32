@@ -46,14 +46,14 @@ int main()
     EXIT_config();
     USART_Config();
     // DMA();
-    // I2C_EE();
+    I2C_EE();
     // SPI_FLASH();
     // SPI_FLASH_FatFs();
     // ADC();
     // TIM_base();
     // SDIO_SDCARD();
     // SDIO_SDCARD_FatFs();
-    CAN();
+    // CAN();
     while (1) {
     }
 }
@@ -424,15 +424,25 @@ void CAN(void)
         CAN_Tran_Data.ExtId   = PASS_ID;
         CAN_Tran_Data.RTR     = CAN_RTR_Data;
         CAN_Tran_Data.IDE     = CAN_Id_Extended;
-        CAN_Tran_Data.DLC     = 1;
-        CAN_Tran_Data.Data[0] = 10;
+        CAN_Tran_Data.DLC     = 5;  // 配置发送的数据帧
+        CAN_Tran_Data.Data[0] = 255;
+        CAN_Tran_Data.Data[1] = 254;
+        CAN_Tran_Data.Data[2] = 253;
+        CAN_Tran_Data.Data[3] = 252;
+        CAN_Tran_Data.Data[4] = 251;
+        CAN_Tran_Data.Data[5] = 250;
+        CAN_Tran_Data.Data[6] = 249;
+        CAN_Tran_Data.Data[7] = 248;
 
         box = CAN_Transmit(CAN1, &CAN_Tran_Data);
         while (CAN_TransmitStatus(CAN1, box) == CAN_TxStatus_Failed)
             ;
         printf("\r\n数据发送完成\r\n");
         if (flag == 1) {
-            printf("\r\n接收到的数据为:%d\r\n", CAN_Rece_Data.Data[0]);
+            for (uint8_t i = 0; i < sizeof(CAN_Tran_Data.Data); i++)
+            {
+                printf("\r\n接收到的数据为:%d\r\n", CAN_Rece_Data.Data[i]);
+            }
             flag = 0;
         }
         SysTick_Delay_ms(1000);

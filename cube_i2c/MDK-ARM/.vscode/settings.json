@@ -1,0 +1,14 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true,
+    "files.associations": {
+        "main.h": "c",
+        "dma.h": "c",
+        "i2c.h": "c",
+        "usart.h": "c",
+        "stm32f1xx_it.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "stm32f1xx_hal_i2c.h": "c"
+    }
+}

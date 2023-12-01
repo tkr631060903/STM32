@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ai_assistant\startup_stm32f103xe.o"
+"ai_assistant\main.o"
+"ai_assistant\gpio.o"
+"ai_assistant\usart.o"
+"ai_assistant\stm32f1xx_it.o"
+"ai_assistant\stm32f1xx_hal_msp.o"
+"ai_assistant\stm32f1xx_hal_timebase_tim.o"
+"ai_assistant\stm32f1xx_hal_gpio_ex.o"
+"ai_assistant\stm32f1xx_hal_tim.o"
+"ai_assistant\stm32f1xx_hal_tim_ex.o"
+"ai_assistant\stm32f1xx_hal_uart.o"
+"ai_assistant\stm32f1xx_hal.o"
+"ai_assistant\stm32f1xx_hal_rcc.o"
+"ai_assistant\stm32f1xx_hal_rcc_ex.o"
+"ai_assistant\stm32f1xx_hal_gpio.o"
+"ai_assistant\stm32f1xx_hal_dma.o"
+"ai_assistant\stm32f1xx_hal_cortex.o"
+"ai_assistant\stm32f1xx_hal_pwr.o"
+"ai_assistant\stm32f1xx_hal_flash.o"
+"ai_assistant\stm32f1xx_hal_flash_ex.o"
+"ai_assistant\stm32f1xx_hal_exti.o"
+"ai_assistant\system_stm32f1xx.o"
+--strict --scatter "AI_Assistant\AI_Assistant.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AI_Assistant.map" -o AI_Assistant\AI_Assistant.axf
